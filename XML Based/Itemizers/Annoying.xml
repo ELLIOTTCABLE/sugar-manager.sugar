@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<itemizer>
+
+	<recipe name="com.macrabbit.ExampleSugar.really.annoying.tag">
+		<class>MRExampleSugarAnnoyingTagItem</class>
+		<selector>html.tag.open:has-child(name:capture(name)), html.tag.close:has-child(name:capture(name))</selector>
+	</recipe>
+	
+</itemizer>

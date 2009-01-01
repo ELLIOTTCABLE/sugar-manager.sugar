@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<action-recipes>
+	<action id="com.macrabbit.FileActions.ExampleSugar.MRExampleSugarTagUppercaser" category="actions.file.ExampleSugar">
+	
+		<class>MRExampleSugarFileTypeDetectingAction</class>
+		<title>File Action enabled for any filename</title>
+		
+	</action>
+	<action id="com.macrabbit.FileActions.ExampleSugar.MRExampleSugarTagLowercaser" category="actions.file.ExampleSugar">
+	
+		<class>MRExampleSugarFileTypeDetectingAction</class>
+		<title>File Action enabled for XML and HTML</title>
+		<when-disabled>show</when-disabled>
+		<setup>
+			<extensions>
+				<array>
+					<string>html</string>
+					<string>htm</string>
+					<string>shtml</string>
+					<string>shtm</string>
+					<string>xhtml</string>
+					<string>xml</string>
+				</array>
+			</extensions>
+		</setup>
+		
+	</action>
+</action-recipes>

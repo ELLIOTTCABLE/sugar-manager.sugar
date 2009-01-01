@@ -1,0 +1,358 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D0E843D0EC3EA940022EEE4 /* ExampleSugar.sugar in Copy To Espresso */ = {isa = PBXBuildFile; fileRef = 8D5B49B6048680CD000E48DA /* ExampleSugar.sugar */; };
+		3D65763F0E991E69009E9EB8 /* Itemizers in Copy XML Files */ = {isa = PBXBuildFile; fileRef = 3D65762A0E991E38009E9EB8 /* Itemizers */; };
+		3DE0B8D10ED337DF00EE948E /* MRExampleSugarTagCaseChanger.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE0B8D00ED337DF00EE948E /* MRExampleSugarTagCaseChanger.m */; };
+		3DE0B9EB0ED3567D00EE948E /* TextActions in Copy XML Files */ = {isa = PBXBuildFile; fileRef = 3DE0B9E60ED3566600EE948E /* TextActions */; };
+		3DE0BA990ED3621700EE948E /* FileActions in Copy XML Files */ = {isa = PBXBuildFile; fileRef = 3DE0BA940ED3620D00EE948E /* FileActions */; };
+		3DE0BA9C0ED3622400EE948E /* MRExampleSugarFileTypeDetectingAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE0BA9B0ED3622400EE948E /* MRExampleSugarFileTypeDetectingAction.m */; };
+		3DE0BB1D0ED36A1500EE948E /* MRExampleSugarAnnoyingTagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE0BB1C0ED36A1500EE948E /* MRExampleSugarAnnoyingTagItem.m */; };
+		51F26DDA0F0C523000630F37 /* TestWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51F26DD90F0C523000630F37 /* TestWindow.xib */; };
+		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3D0E84440EC3EAA80022EEE4 /* Copy To Espresso */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "~/Library/Application Support/Espresso/Sugars";
+			dstSubfolderSpec = 0;
+			files = (
+				3D0E843D0EC3EA940022EEE4 /* ExampleSugar.sugar in Copy To Espresso */,
+			);
+			name = "Copy To Espresso";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D65765F0E991E6E009E9EB8 /* Copy XML Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 1;
+			files = (
+				3DE0BA990ED3621700EE948E /* FileActions in Copy XML Files */,
+				3D65763F0E991E69009E9EB8 /* Itemizers in Copy XML Files */,
+				3DE0B9EB0ED3567D00EE948E /* TextActions in Copy XML Files */,
+			);
+			name = "Copy XML Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C1672FE841209C02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		3D65762A0E991E38009E9EB8 /* Itemizers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Itemizers; sourceTree = "<group>"; };
+		3D657A0A0E9A6763009E9EB8 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		3DE0B8CF0ED337DF00EE948E /* MRExampleSugarTagCaseChanger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRExampleSugarTagCaseChanger.h; sourceTree = "<group>"; };
+		3DE0B8D00ED337DF00EE948E /* MRExampleSugarTagCaseChanger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRExampleSugarTagCaseChanger.m; sourceTree = "<group>"; };
+		3DE0B9E60ED3566600EE948E /* TextActions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TextActions; sourceTree = "<group>"; };
+		3DE0BA940ED3620D00EE948E /* FileActions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FileActions; sourceTree = "<group>"; };
+		3DE0BA9A0ED3622400EE948E /* MRExampleSugarFileTypeDetectingAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRExampleSugarFileTypeDetectingAction.h; sourceTree = "<group>"; };
+		3DE0BA9B0ED3622400EE948E /* MRExampleSugarFileTypeDetectingAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRExampleSugarFileTypeDetectingAction.m; sourceTree = "<group>"; };
+		3DE0BB1B0ED36A1500EE948E /* MRExampleSugarAnnoyingTagItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRExampleSugarAnnoyingTagItem.h; sourceTree = "<group>"; };
+		3DE0BB1C0ED36A1500EE948E /* MRExampleSugarAnnoyingTagItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRExampleSugarAnnoyingTagItem.m; sourceTree = "<group>"; };
+		51F26DD90F0C523000630F37 /* TestWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TestWindow.xib; path = "Code/File Actions/TestWindow.xib"; sourceTree = "<group>"; };
+		8D5B49B6048680CD000E48DA /* ExampleSugar.sugar */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleSugar.sugar; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2F7E65807B2D6F200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D5B49B3048680CD000E48DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* CSS */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AFFE84173DC02AAC07 /* Code */,
+				3D6576110E991DDC009E9EB8 /* XML Based */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
+				19C28FB8FE9D52D311CA2CBB /* Products */,
+			);
+			name = CSS;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */,
+				1058C7AEFEA557BF11CA2CBB /* Other Frameworks */,
+			);
+			name = "Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				51F26DD90F0C523000630F37 /* TestWindow.xib */,
+				8D5B49B7048680CD000E48DA /* Info.plist */,
+				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				3DE0B8B50ED3261600EE948E /* File Actions */,
+				3DE0B8B70ED3261600EE948E /* Text Actions */,
+				3DE0B8B60ED3261600EE948E /* Itemizer */,
+				3D657A0A0E9A6763009E9EB8 /* Prefix.pch */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7AEFEA557BF11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				089C167FFE841241C02AAC07 /* AppKit.framework */,
+				D2F7E65807B2D6F200F64583 /* CoreData.framework */,
+				089C1672FE841209C02AAC07 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB8FE9D52D311CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D5B49B6048680CD000E48DA /* ExampleSugar.sugar */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D6576110E991DDC009E9EB8 /* XML Based */ = {
+			isa = PBXGroup;
+			children = (
+				3DE0BA940ED3620D00EE948E /* FileActions */,
+				3D65762A0E991E38009E9EB8 /* Itemizers */,
+				3DE0B9E60ED3566600EE948E /* TextActions */,
+			);
+			path = "XML Based";
+			sourceTree = "<group>";
+		};
+		3DE0B8B50ED3261600EE948E /* File Actions */ = {
+			isa = PBXGroup;
+			children = (
+				3DE0BA9A0ED3622400EE948E /* MRExampleSugarFileTypeDetectingAction.h */,
+				3DE0BA9B0ED3622400EE948E /* MRExampleSugarFileTypeDetectingAction.m */,
+			);
+			path = "File Actions";
+			sourceTree = "<group>";
+		};
+		3DE0B8B60ED3261600EE948E /* Itemizer */ = {
+			isa = PBXGroup;
+			children = (
+				3DE0BB1B0ED36A1500EE948E /* MRExampleSugarAnnoyingTagItem.h */,
+				3DE0BB1C0ED36A1500EE948E /* MRExampleSugarAnnoyingTagItem.m */,
+			);
+			path = Itemizer;
+			sourceTree = "<group>";
+		};
+		3DE0B8B70ED3261600EE948E /* Text Actions */ = {
+			isa = PBXGroup;
+			children = (
+				3DE0B8CF0ED337DF00EE948E /* MRExampleSugarTagCaseChanger.h */,
+				3DE0B8D00ED337DF00EE948E /* MRExampleSugarTagCaseChanger.m */,
+			);
+			path = "Text Actions";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D5B49AC048680CD000E48DA /* ExampleSugar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "ExampleSugar" */;
+			buildPhases = (
+				8D5B49AF048680CD000E48DA /* Resources */,
+				8D5B49B1048680CD000E48DA /* Sources */,
+				8D5B49B3048680CD000E48DA /* Frameworks */,
+				3D65765F0E991E6E009E9EB8 /* Copy XML Files */,
+				3D0E84440EC3EAA80022EEE4 /* Copy To Espresso */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExampleSugar;
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = CSS;
+			productReference = 8D5B49B6048680CD000E48DA /* ExampleSugar.sugar */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "ExampleSugar" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 089C166AFE841209C02AAC07 /* CSS */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D5B49AC048680CD000E48DA /* ExampleSugar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D5B49AF048680CD000E48DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */,
+				51F26DDA0F0C523000630F37 /* TestWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D5B49B1048680CD000E48DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DE0B8D10ED337DF00EE948E /* MRExampleSugarTagCaseChanger.m in Sources */,
+				3DE0BA9C0ED3622400EE948E /* MRExampleSugarFileTypeDetectingAction.m in Sources */,
+				3DE0BB1D0ED36A1500EE948E /* MRExampleSugarAnnoyingTagItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C167DFE841241C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C167EFE841241C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB913B08733D840010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = /Applications/Espresso.app/Contents/MacOS/Espresso;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Code/Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				PRODUCT_NAME = ExampleSugar;
+				USER_HEADER_SEARCH_PATHS = /Applications/Espresso.app/Contents/Headers;
+				WRAPPER_EXTENSION = sugar;
+			};
+			name = Debug;
+		};
+		1DEB913C08733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = /Applications/Espresso.app/Contents/MacOS/Espresso;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Code/XML+HTML_Prefix.pch";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				PRODUCT_NAME = "XML+HTML";
+				USER_HEADER_SEARCH_PATHS = /Applications/Espresso.app/Contents/Headers;
+				WRAPPER_EXTENSION = sugar;
+			};
+			name = Release;
+		};
+		1DEB913F08733D840010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				BUNDLE_LOADER = "$(ESPRESSO_PATH)/Contents/MacOS/Espresso";
+				ESPRESSO_PATH = /Applications/Espresso.app;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(ESPRESSO_PATH)/Contents/Headers";
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Debug;
+		};
+		1DEB914008733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				BUNDLE_LOADER = "$(ESPRESSO_PATH)/Contents/MacOS/Espresso";
+				ESPRESSO_PATH = /Applications/Espresso.app;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(ESPRESSO_PATH)/Contents/Headers";
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "ExampleSugar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913B08733D840010E9CD /* Debug */,
+				1DEB913C08733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "ExampleSugar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913F08733D840010E9CD /* Debug */,
+				1DEB914008733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

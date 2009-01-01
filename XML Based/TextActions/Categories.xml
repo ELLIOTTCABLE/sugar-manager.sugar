@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<action-categories>
+	<category id="actions.text.ExampleSugar" show="sub">
+		<title>Example Sugar Actions</title>
+	</category>
+</action-categories>
