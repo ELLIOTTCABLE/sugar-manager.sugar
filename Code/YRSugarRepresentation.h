@@ -24,5 +24,6 @@
          identifier:(NSString *)anIdentifier
         downloadURL:(NSURL *)aDownloadURL
             homeURL:(NSURL *)aHomeURL;
++ (id)sugarFromURL:(NSURL *)languagesXMLURL;
 
 @end

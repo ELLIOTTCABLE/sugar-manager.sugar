@@ -31,6 +31,20 @@
   return sugar;
 }
 
++ (id)sugarFromURL:(NSURL *)languagesXMLURL {
+  NSError **errorProxy = nil;
+  NSXMLDocument *languagesXML = [[NSXMLDocument alloc] initWithContentsOfURL:languagesXMLURL options:NSXMLDocumentTidyXML error:errorProxy];
+  NSXMLElement *meta = [[[languagesXML rootElement] elementsForName:@"meta"] lastObject];
+  
+  NSLog(@"+ sugarFromURL: ... received XML data: %@", meta);
+  
+  return [self sugarWithName:[[[meta elementsForName:@"name"] lastObject] stringValue]
+                      author:[[[meta elementsForName:@"author"] lastObject] stringValue]
+                  identifier:[[[meta elementsForName:@"identifier"] lastObject] stringValue]
+                 downloadURL:[[[meta elementsForName:@"download"] lastObject] stringValue]
+                     homeURL:[[[meta elementsForName:@"url"] lastObject] stringValue]];
+}
+
 - (void)dealloc {
   [name release];
   [author release];
