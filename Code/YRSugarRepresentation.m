@@ -32,17 +32,31 @@
 }
 
 + (id)sugarFromURL:(NSURL *)languagesXMLURL {
+  NSLog(@"+ sugarFromURL: ... using XML URL: %@", languagesXMLURL);
   NSError **errorProxy = nil;
   NSXMLDocument *languagesXML = [[NSXMLDocument alloc] initWithContentsOfURL:languagesXMLURL options:NSXMLDocumentTidyXML error:errorProxy];
   NSXMLElement *meta = [[[languagesXML rootElement] elementsForName:@"meta"] lastObject];
   
   NSLog(@"+ sugarFromURL: ... received XML data: %@", meta);
   
-  return [self sugarWithName:[[[meta elementsForName:@"name"] lastObject] stringValue]
-                      author:[[[meta elementsForName:@"author"] lastObject] stringValue]
-                  identifier:[[[meta elementsForName:@"identifier"] lastObject] stringValue]
-                 downloadURL:[[[meta elementsForName:@"download"] lastObject] stringValue]
-                     homeURL:[[[meta elementsForName:@"url"] lastObject] stringValue]];
+  NSString *aName = [[[meta elementsForName:@"name"] lastObject] stringValue];
+  if(!aName || aName == @"") return nil;
+  NSString *anAuthor = [[[meta elementsForName:@"author"] lastObject] stringValue];
+  NSString *anIdentifier = [[[meta elementsForName:@"identifier"] lastObject] stringValue];
+  if(!anIdentifier || anIdentifier == @"") return nil;
+  NSString *aDownloadURL = [[[meta elementsForName:@"download"] lastObject] stringValue];
+  if(!aDownloadURL || aDownloadURL == @"") return nil;
+  NSString *aHomeURL = [[[meta elementsForName:@"url"] lastObject] stringValue];
+  if(!aHomeURL || aHomeURL == @"") aHomeURL = @"http://";
+  
+  
+  YRSugarRepresentation *sugar = [self sugarWithName:aName
+                                              author:anAuthor
+                                          identifier:anIdentifier
+                                         downloadURL:[NSURL URLWithString:aDownloadURL]
+                                             homeURL:[NSURL URLWithString:aHomeURL]];
+  NSLog(@"+ sugarFromURL: ... created %@", sugar);
+  return sugar;
 }
 
 - (void)dealloc {
