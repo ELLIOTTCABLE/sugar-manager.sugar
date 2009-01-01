@@ -15,6 +15,10 @@
   return self;
 }
 
+- (void)updateSugarsFromCoffeeHouse {
+  
+}
+
 - (void)dealloc
 {
   [sugars dealloc];
