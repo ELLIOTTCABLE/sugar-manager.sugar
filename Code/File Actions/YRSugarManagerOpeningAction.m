@@ -14,7 +14,12 @@
 }
 
 - (BOOL)performActionWithContext:(id)context error:(NSError **)outError {
-  [NSBundle loadNibNamed:@"SugarManager" owner:self];
+  if(!sugarManagerController) {
+    sugarManagerController = [[YRSugarManagerController alloc] init];
+  }
+  
+  [NSBundle loadNibNamed:@"SugarManager" owner:sugarManagerController];
+  [sugarManagerController showWindow:self];
   
   return YES;
 }

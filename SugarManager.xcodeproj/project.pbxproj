@@ -48,8 +48,8 @@
 		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		3D657A0A0E9A6763009E9EB8 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		3DE0BA940ED3620D00EE948E /* FileActions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FileActions; sourceTree = "<group>"; };
-		5150D4180F0C65FF006DF3DD /* YRSugarManagerOpeningAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRSugarManagerOpeningAction.h; sourceTree = "<group>"; };
-		5150D4190F0C65FF006DF3DD /* YRSugarManagerOpeningAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRSugarManagerOpeningAction.m; sourceTree = "<group>"; };
+		5150D4180F0C65FF006DF3DD /* YRSugarManagerOpeningAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YRSugarManagerOpeningAction.h; path = "File Actions/YRSugarManagerOpeningAction.h"; sourceTree = "<group>"; };
+		5150D4190F0C65FF006DF3DD /* YRSugarManagerOpeningAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YRSugarManagerOpeningAction.m; path = "File Actions/YRSugarManagerOpeningAction.m"; sourceTree = "<group>"; };
 		51C016690F0C6E38007CA021 /* SugarManager.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SugarManager.xib; sourceTree = "<group>"; };
 		51C0166E0F0C6EB1007CA021 /* YRSugarManagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YRSugarManagerController.h; path = ../YRSugarManagerController.h; sourceTree = "<group>"; };
 		51C0166F0F0C6EB1007CA021 /* YRSugarManagerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YRSugarManagerController.m; path = ../YRSugarManagerController.m; sourceTree = "<group>"; };
@@ -104,9 +104,10 @@
 		08FB77AFFE84173DC02AAC07 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				5150D4180F0C65FF006DF3DD /* YRSugarManagerOpeningAction.h */,
+				5150D4190F0C65FF006DF3DD /* YRSugarManagerOpeningAction.m */,
 				51C0166E0F0C6EB1007CA021 /* YRSugarManagerController.h */,
 				51C0166F0F0C6EB1007CA021 /* YRSugarManagerController.m */,
-				3DE0B8B50ED3261600EE948E /* File Actions */,
 				3D657A0A0E9A6763009E9EB8 /* Prefix.pch */,
 			);
 			path = Code;
@@ -144,15 +145,6 @@
 				3DE0BA940ED3620D00EE948E /* FileActions */,
 			);
 			path = "XML Based";
-			sourceTree = "<group>";
-		};
-		3DE0B8B50ED3261600EE948E /* File Actions */ = {
-			isa = PBXGroup;
-			children = (
-				5150D4180F0C65FF006DF3DD /* YRSugarManagerOpeningAction.h */,
-				5150D4190F0C65FF006DF3DD /* YRSugarManagerOpeningAction.m */,
-			);
-			path = "File Actions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,8 +204,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5150D41A0F0C65FF006DF3DD /* YRSugarManagerOpeningAction.m in Sources */,
 				51C016700F0C6EB1007CA021 /* YRSugarManagerController.m in Sources */,
+				5150D41A0F0C65FF006DF3DD /* YRSugarManagerOpeningAction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

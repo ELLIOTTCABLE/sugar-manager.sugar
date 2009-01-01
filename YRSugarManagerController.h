@@ -5,7 +5,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface YRSugarManagerController : NSObject {
+@interface YRSugarManagerController : NSWindowController {
   
 }
 
