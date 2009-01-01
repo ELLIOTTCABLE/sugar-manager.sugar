@@ -19,4 +19,10 @@
 @property (readwrite, copy) NSURL *downloadURL;
 @property (readwrite, copy) NSURL *homeURL;
 
++ (id)sugarWithName:(NSString *)aName
+             author:(NSString *)anAuthor
+         identifier:(NSString *)anIdentifier
+        downloadURL:(NSURL *)aDownloadURL
+            homeURL:(NSURL *)aHomeURL;
+
 @end
