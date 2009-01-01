@@ -20,14 +20,14 @@
         downloadURL:(NSURL *)aDownloadURL
             homeURL:(NSURL *)aHomeURL
        dependencies:(NSArray *)someDependencies {
-  YRSugarRepresentation *sugar = [[[self alloc] init] retain];
+  YRSugarRepresentation *sugar = [[self alloc] init];
   
-  sugar.name = aName;
-  sugar.author = anAuthor;
-  sugar.identifier = anIdentifier;
-  sugar.downloadURL = aDownloadURL;
-  sugar.homeURL = aHomeURL;
-  sugar.dependencies = someDependencies;
+  sugar.name = [aName retain];
+  sugar.author = [anAuthor retain];
+  sugar.identifier = [anIdentifier retain];
+  sugar.downloadURL = [aDownloadURL retain];
+  sugar.homeURL = [aHomeURL retain];
+  sugar.dependencies = [someDependencies retain];
   
   [sugar autorelease];
   
