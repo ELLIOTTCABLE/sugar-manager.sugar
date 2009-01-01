@@ -8,7 +8,7 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="1"/>
+			<integer value="10"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -210,7 +210,7 @@
 														<reference key="NSBackgroundColor" ref="502437854"/>
 														<reference key="NSTextColor" ref="830401445"/>
 													</object>
-													<object class="NSButtonCell" key="NSDataCell" id="910392697">
+													<object class="NSButtonCell" key="NSDataCell" id="18850752">
 														<int key="NSCellFlags">67239424</int>
 														<int key="NSCellFlags2">134348800</int>
 														<string key="NSContents">Download</string>
@@ -400,22 +400,6 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
-						<string key="label">value: arrangedObjects.downloadURL</string>
-						<reference key="source" ref="12484580"/>
-						<reference key="destination" ref="77464455"/>
-						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="12484580"/>
-							<reference key="NSDestination" ref="77464455"/>
-							<string key="NSLabel">value: arrangedObjects.downloadURL</string>
-							<string key="NSBinding">value</string>
-							<string key="NSKeyPath">arrangedObjects.downloadURL</string>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">32</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
 						<string key="label">value: arrangedObjects.homeURL</string>
 						<reference key="source" ref="833956373"/>
 						<reference key="destination" ref="77464455"/>
@@ -573,7 +557,7 @@
 						<reference key="object" ref="12484580"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="910392697"/>
+							<reference ref="18850752"/>
 						</object>
 						<reference key="parent" ref="77327479"/>
 					</object>
@@ -607,7 +591,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">41</int>
-						<reference key="object" ref="910392697"/>
+						<reference key="object" ref="18850752"/>
 						<reference key="parent" ref="12484580"/>
 					</object>
 				</object>
@@ -692,8 +676,17 @@
 					<string key="className">YRSugarManagerController</string>
 					<string key="superclassName">NSWindowController</string>
 					<object class="NSMutableDictionary" key="actions">
-						<string key="NS.key.0">updateSugarsFromCoffeeHouse:</string>
-						<string key="NS.object.0">id</string>
+						<bool key="EncodedWithXMLCoder">YES</bool>
+						<object class="NSMutableArray" key="dict.sortedKeys">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>downloadSugar:</string>
+							<string>updateSugarsFromCoffeeHouse:</string>
+						</object>
+						<object class="NSMutableArray" key="dict.values">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
+							<string>id</string>
+						</object>
 					</object>
 					<object class="NSMutableDictionary" key="outlets">
 						<string key="NS.key.0">sugarsController</string>
