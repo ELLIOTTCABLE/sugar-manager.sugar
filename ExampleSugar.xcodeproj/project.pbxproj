@@ -187,9 +187,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8D5B49AC048680CD000E48DA /* ExampleSugar */ = {
+		8D5B49AC048680CD000E48DA /* SugarManager */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "ExampleSugar" */;
+			buildConfigurationList = 1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "SugarManager" */;
 			buildPhases = (
 				8D5B49AF048680CD000E48DA /* Resources */,
 				8D5B49B1048680CD000E48DA /* Sources */,
@@ -201,7 +201,7 @@
 			);
 			dependencies = (
 			);
-			name = ExampleSugar;
+			name = SugarManager;
 			productInstallPath = "$(HOME)/Library/Bundles";
 			productName = CSS;
 			productReference = 8D5B49B6048680CD000E48DA /* ExampleSugar.sugar */;
@@ -219,7 +219,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8D5B49AC048680CD000E48DA /* ExampleSugar */,
+				8D5B49AC048680CD000E48DA /* SugarManager */,
 			);
 		};
 /* End PBXProject section */
@@ -334,7 +334,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "ExampleSugar" */ = {
+		1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "SugarManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DEB913B08733D840010E9CD /* Debug */,
