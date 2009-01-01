@@ -12,12 +12,14 @@
 @synthesize identifier;
 @synthesize downloadURL;
 @synthesize homeURL;
+@synthesize dependencies;
 
 + (id)sugarWithName:(NSString *)aName
              author:(NSString *)anAuthor
          identifier:(NSString *)anIdentifier
         downloadURL:(NSURL *)aDownloadURL
-            homeURL:(NSURL *)aHomeURL {
+            homeURL:(NSURL *)aHomeURL
+       dependencies:(NSArray *)someDependencies {
   YRSugarRepresentation *sugar = [[[self alloc] init] retain];
   
   sugar.name = aName;
@@ -25,6 +27,7 @@
   sugar.identifier = anIdentifier;
   sugar.downloadURL = aDownloadURL;
   sugar.homeURL = aHomeURL;
+  sugar.dependencies = someDependencies;
   
   [sugar autorelease];
   
@@ -49,12 +52,20 @@
   NSString *aHomeURL = [[[meta elementsForName:@"url"] lastObject] stringValue];
   if(!aHomeURL || aHomeURL == @"") aHomeURL = @"http://";
   
+  NSEnumerator *dependencyEnumerator = [[[[meta elementsForName:@"dependencies"] lastObject] elementsForName:@"dependency"] objectEnumerator];
+  NSMutableArray *someDependencies = [NSMutableArray arrayWithCapacity:2];
+  id aDependency;
+  while (aDependency = [dependencyEnumerator nextObject]) {
+    [someDependencies addObject:[aDependency stringValue]];
+  }
   
   YRSugarRepresentation *sugar = [self sugarWithName:aName
                                               author:anAuthor
                                           identifier:anIdentifier
                                          downloadURL:[NSURL URLWithString:aDownloadURL]
-                                             homeURL:[NSURL URLWithString:aHomeURL]];
+                                             homeURL:[NSURL URLWithString:aHomeURL]
+                                        dependencies:[NSArray arrayWithArray:someDependencies]];
+  
   NSLog(@"+ sugarFromURL: ... created %@", sugar);
   return sugar;
 }
