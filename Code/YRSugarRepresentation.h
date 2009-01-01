@@ -10,6 +10,7 @@
   NSString *author;
   NSString *identifier;
   NSURL *downloadURL;
+  NSString *downloadFormat;
   NSURL *homeURL;
   NSArray *dependencies;
 }
@@ -18,6 +19,7 @@
 @property (readwrite, copy) NSString *author;
 @property (readwrite, copy) NSString *identifier;
 @property (readwrite, copy) NSURL *downloadURL;
+@property (readwrite, copy) NSString *downloadFormat;
 @property (readwrite, copy) NSURL *homeURL;
 @property (readwrite, copy) NSArray *dependencies;
 
@@ -25,6 +27,7 @@
              author:(NSString *)anAuthor
          identifier:(NSString *)anIdentifier
         downloadURL:(NSURL *)aDownloadURL
+     downloadFormat:(NSString *)aDownloadFormat
             homeURL:(NSURL *)aHomeURL
        dependencies:(NSArray *)someDependencies;
 + (id)sugarFromURL:(NSURL *)languagesXMLURL;
