@@ -14,6 +14,7 @@
 		51C017470F0C7724007CA021 /* YRSugarManagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C017440F0C7724007CA021 /* YRSugarManagerController.m */; };
 		51C017480F0C7724007CA021 /* YRSugarManagerOpeningAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C017460F0C7724007CA021 /* YRSugarManagerOpeningAction.m */; };
 		51C017690F0C7C23007CA021 /* YRSugarRepresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C017680F0C7C23007CA021 /* YRSugarRepresentation.m */; };
+		51C019F70F0D3DAC007CA021 /* Languages.xml in Resources */ = {isa = PBXBuildFile; fileRef = 51C019F60F0D3DAC007CA021 /* Languages.xml */; };
 		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
 		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
@@ -57,6 +58,7 @@
 		51C017460F0C7724007CA021 /* YRSugarManagerOpeningAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRSugarManagerOpeningAction.m; sourceTree = "<group>"; };
 		51C017670F0C7C23007CA021 /* YRSugarRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRSugarRepresentation.h; sourceTree = "<group>"; };
 		51C017680F0C7C23007CA021 /* YRSugarRepresentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRSugarRepresentation.m; sourceTree = "<group>"; };
+		51C019F60F0D3DAC007CA021 /* Languages.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Languages.xml; sourceTree = "<group>"; };
 		8D5B49B6048680CD000E48DA /* SugarManager.sugar */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SugarManager.sugar; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2F7E65807B2D6F200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
@@ -101,6 +103,7 @@
 				8D5B49B7048680CD000E48DA /* Info.plist */,
 				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
 				51C016690F0C6E38007CA021 /* SugarManager.xib */,
+				51C019F60F0D3DAC007CA021 /* Languages.xml */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				51C0166A0F0C6E38007CA021 /* SugarManager.xib in Resources */,
 				51C017310F0C7651007CA021 /* Actions.xml in Resources */,
 				51C017320F0C7651007CA021 /* Categories.xml in Resources */,
+				51C019F70F0D3DAC007CA021 /* Languages.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

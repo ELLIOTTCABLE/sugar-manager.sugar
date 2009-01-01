@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+  
+  <meta>
+    <!-- This should just be the name without .sugar -->
+    <name>Sugar Manager</name>
+    <!-- Author's name -->
+    <author>elliottcable</author>
+    <!--
+      Identifier string (for the whole sugar, not the same as the language string above).
+      Should probably look like 'tld.domain.Sugar.Language-name' or 'tld.domain.Sugar.Language-name.framework'
+    -->
+    <identifier>name.elliottcable.Sugar.Manager</identifier>
+    <!--
+      This should provide a URL at which the sugar should be accessed.
+      'format' should be one of the following:
+        - raw: Only applicable with a file:// URL, this means it's an unarchived directory
+        - tgz: URL references a gzipped tarfile (NOT IMPLEMENTED)
+        - zip: URL references a zipfile (NOT IMPLEMENTED)
+        - svn: URL references the Sugar directory's path in a SVN repository (NOT IMPLEMENTED)
+        - git: URL references a publicly-accessible git upstream (NOT IMPLEMENTED)
+      In all cases, the archive/repository should have the Sugar directory as
+      it's root - that is, the Languages.xml file and Sugar folders (Syntaxes,
+      Itemizers, etc...) should all be directly within the root of the archive/
+      repository, not within a subfolder.
+    -->
+    <download format="raw">file:///Users/elliottcable/Code/sugar-manager.sugar</download>
+    <!-- The home URL at which a user can obtain more information -->
+    <url>http://github.com/elliottcable/sugar-manager.sugar</url>
+  </meta>
+  
+</settings>
