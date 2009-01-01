@@ -8,7 +8,7 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="2"/>
+			<integer value="1"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -210,7 +210,7 @@
 														<reference key="NSBackgroundColor" ref="502437854"/>
 														<reference key="NSTextColor" ref="830401445"/>
 													</object>
-													<object class="NSButtonCell" key="NSDataCell" id="11018995">
+													<object class="NSButtonCell" key="NSDataCell" id="855060813">
 														<int key="NSCellFlags">67239424</int>
 														<int key="NSCellFlags2">134348800</int>
 														<string key="NSContents">Download</string>
@@ -558,13 +558,14 @@
 						<int key="objectID">16</int>
 						<reference key="object" ref="77464455"/>
 						<reference key="parent" ref="1002"/>
+						<string key="objectName">Sugars</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">24</int>
 						<reference key="object" ref="12484580"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="11018995"/>
+							<reference ref="855060813"/>
 						</object>
 						<reference key="parent" ref="77327479"/>
 					</object>
@@ -598,7 +599,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">41</int>
-						<reference key="object" ref="11018995"/>
+						<reference key="object" ref="855060813"/>
 						<reference key="parent" ref="12484580"/>
 					</object>
 				</object>
