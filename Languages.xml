@@ -27,6 +27,18 @@
     <download format="raw">file:///Users/elliottcable/Code/sugar-manager.sugar</download>
     <!-- The home URL at which a user can obtain more information -->
     <url>http://github.com/elliottcable/sugar-manager.sugar</url>
+    <!--
+      This is an array of dependency elements, each of which references the
+      identifier of a Sugar upon which this Sugar depends. Dependencies will
+      be automatically installed first if found, and this sugar will
+      marked as unavailable if it's dependencies are not found / unavailable.
+      
+      This sugar has no dependencies, see the Ruby.sugar's Languages.xml for
+      an example:
+          
+          http://github.com/elliottcable/ruby.sugar/tree/master/Languages.xml
+    -->
+    <dependencies></dependencies>
   </meta>
   
 </settings>
