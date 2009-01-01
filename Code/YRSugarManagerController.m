@@ -10,7 +10,7 @@
 
 - (id)init {
   [super init];
-  sugars = [NSMutableSet setWithCapacity:25];
+  sugars = [[NSMutableSet setWithCapacity:25] retain];
   
   YRSugarRepresentation *sugar;
   sugar = [YRSugarRepresentation sugarFromURL:[NSURL URLWithString:@"file:///Users/elliottcable/Code/sugar-manager.sugar/Languages.xml"]];
