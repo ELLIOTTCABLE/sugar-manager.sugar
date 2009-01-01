@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D0E843D0EC3EA940022EEE4 /* ExampleSugar.sugar in Copy To Espresso */ = {isa = PBXBuildFile; fileRef = 8D5B49B6048680CD000E48DA /* ExampleSugar.sugar */; };
+		3D0E843D0EC3EA940022EEE4 /* SugarManager.sugar in Copy To Espresso */ = {isa = PBXBuildFile; fileRef = 8D5B49B6048680CD000E48DA /* SugarManager.sugar */; };
 		3D65763F0E991E69009E9EB8 /* Itemizers in Copy XML Files */ = {isa = PBXBuildFile; fileRef = 3D65762A0E991E38009E9EB8 /* Itemizers */; };
 		3DE0B8D10ED337DF00EE948E /* MRExampleSugarTagCaseChanger.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE0B8D00ED337DF00EE948E /* MRExampleSugarTagCaseChanger.m */; };
 		3DE0B9EB0ED3567D00EE948E /* TextActions in Copy XML Files */ = {isa = PBXBuildFile; fileRef = 3DE0B9E60ED3566600EE948E /* TextActions */; };
@@ -26,7 +26,7 @@
 			dstPath = "~/Library/Application Support/Espresso/Sugars";
 			dstSubfolderSpec = 0;
 			files = (
-				3D0E843D0EC3EA940022EEE4 /* ExampleSugar.sugar in Copy To Espresso */,
+				3D0E843D0EC3EA940022EEE4 /* SugarManager.sugar in Copy To Espresso */,
 			);
 			name = "Copy To Espresso";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,7 +62,7 @@
 		3DE0BB1B0ED36A1500EE948E /* MRExampleSugarAnnoyingTagItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRExampleSugarAnnoyingTagItem.h; sourceTree = "<group>"; };
 		3DE0BB1C0ED36A1500EE948E /* MRExampleSugarAnnoyingTagItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRExampleSugarAnnoyingTagItem.m; sourceTree = "<group>"; };
 		51F26DD90F0C523000630F37 /* TestWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TestWindow.xib; path = "Code/File Actions/TestWindow.xib"; sourceTree = "<group>"; };
-		8D5B49B6048680CD000E48DA /* ExampleSugar.sugar */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleSugar.sugar; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D5B49B6048680CD000E48DA /* SugarManager.sugar */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SugarManager.sugar; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2F7E65807B2D6F200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
@@ -142,7 +142,7 @@
 		19C28FB8FE9D52D311CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D5B49B6048680CD000E48DA /* ExampleSugar.sugar */,
+				8D5B49B6048680CD000E48DA /* SugarManager.sugar */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -204,7 +204,7 @@
 			name = SugarManager;
 			productInstallPath = "$(HOME)/Library/Bundles";
 			productName = CSS;
-			productReference = 8D5B49B6048680CD000E48DA /* ExampleSugar.sugar */;
+			productReference = 8D5B49B6048680CD000E48DA /* SugarManager.sugar */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -275,7 +275,7 @@
 				GCC_PREFIX_HEADER = Code/Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Bundles";
-				PRODUCT_NAME = ExampleSugar;
+				PRODUCT_NAME = SugarManager;
 				USER_HEADER_SEARCH_PATHS = /Applications/Espresso.app/Contents/Headers;
 				WRAPPER_EXTENSION = sugar;
 			};
