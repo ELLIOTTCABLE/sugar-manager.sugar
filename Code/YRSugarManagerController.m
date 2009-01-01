@@ -15,18 +15,18 @@
   [sugars addObject:[YRSugarRepresentation sugarWithName:@"Sugar Manager"
                                                   author:@"elliottcable"
                                               identifier:@"name.elliottcable.Sugar.Manager"
-                                             downloadURL:@"http://github.com/elliottcable/sugar-manager.sugar/tarball/master"
-                                                 homeURL:@"http://github.com/elliottcable/sugar-manager.sugar"]];
+                                             downloadURL:[NSURL URLWithString:@"http://github.com/elliottcable/sugar-manager.sugar/tarball/master"]
+                                                 homeURL:[NSURL URLWithString:@"http://github.com/elliottcable/sugar-manager.sugar"]]];
   [sugars addObject:[YRSugarRepresentation sugarWithName:@"Ruby"
                                                   author:@"elliottcable"
                                               identifier:@"name.elliottcable.Sugar.Ruby"
-                                             downloadURL:@"http://github.com/elliottcable/ruby.sugar/tarball/master"
-                                                 homeURL:@"http://github.com/elliottcable/ruby.sugar"]];
+                                             downloadURL:[NSURL URLWithString:@"http://github.com/elliottcable/ruby.sugar/tarball/master"]
+                                                 homeURL:[NSURL URLWithString:@"http://github.com/elliottcable/ruby.sugar"]]];
   [sugars addObject:[YRSugarRepresentation sugarWithName:@"Regex"
                                                   author:@"elliottcable"
                                               identifier:@"name.elliottcable.Sugar.Regex"
-                                             downloadURL:@"http://github.com/elliottcable/regex.sugar/tarball/master"
-                                                 homeURL:@"http://github.com/elliottcable/regex.sugar"]];
+                                             downloadURL:[NSURL URLWithString:@"http://github.com/elliottcable/regex.sugar/tarball/master"]
+                                                 homeURL:[NSURL URLWithString:@"http://github.com/elliottcable/regex.sugar"]]];
   
   return self;
 }
