@@ -8,8 +8,7 @@
 
 @implementation YRSugarManagerController
 
-- (id)init
-{
+- (id)init {
   [super init];
   sugars = [NSMutableSet setWithCapacity:25];
   
@@ -36,8 +35,7 @@
   
 }
 
-- (void)dealloc
-{
+- (void)dealloc {
   [sugars dealloc];
   sugars = nil;
   [super dealloc];
