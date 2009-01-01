@@ -249,7 +249,16 @@
 				<string key="NSScreenRect">{{0, 0}, {1280, 778}}</string>
 				<string key="NSMaxSize">{3.40282e+38, 3.40282e+38}</string>
 			</object>
-			<object class="NSArrayController" id="991059523">
+			<object class="NSArrayController" id="151218863">
+				<object class="NSMutableArray" key="NSDeclaredKeys">
+					<bool key="EncodedWithXMLCoder">YES</bool>
+					<string>name</string>
+					<string>author</string>
+					<string>identifier</string>
+					<string>downloadURL</string>
+					<string>homeURL</string>
+				</object>
+				<string key="NSObjectClassName">YRSugarRepresentation</string>
 				<bool key="NSEditable">YES</bool>
 				<object class="_NSManagedProxy" key="_NSManagedProxy"/>
 				<bool key="NSAvoidsEmptySelection">YES</bool>
@@ -377,7 +386,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">16</int>
-						<reference key="object" ref="991059523"/>
+						<reference key="object" ref="151218863"/>
 						<reference key="parent" ref="1002"/>
 					</object>
 				</object>
