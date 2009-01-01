@@ -35,6 +35,10 @@
   
 }
 
+- (IBAction)downloadSugar:(id)sender {
+  NSLog(@"- downloadSugar: ... selection == %@", [sugarsController selectedObjects]);
+}
+
 - (void)dealloc {
   [sugars dealloc];
   sugars = nil;
