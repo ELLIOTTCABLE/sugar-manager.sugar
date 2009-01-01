@@ -4,6 +4,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
+@class YRSugarRepresentation;
 
 @interface YRSugarManagerController : NSWindowController {
   
