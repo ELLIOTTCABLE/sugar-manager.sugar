@@ -15,7 +15,7 @@
   return self;
 }
 
-- (void)updateSugarsFromCoffeeHouse {
+- (void)updateSugarsFromCoffeeHouse:(id)sender {
   
 }
 
