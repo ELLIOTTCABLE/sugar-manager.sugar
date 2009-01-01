@@ -12,21 +12,9 @@
   [super init];
   sugars = [NSMutableSet setWithCapacity:25];
   
-  [sugars addObject:[YRSugarRepresentation sugarWithName:@"Sugar Manager"
-                                                  author:@"elliottcable"
-                                              identifier:@"name.elliottcable.Sugar.Manager"
-                                             downloadURL:[NSURL URLWithString:@"http://github.com/elliottcable/sugar-manager.sugar/tarball/master"]
-                                                 homeURL:[NSURL URLWithString:@"http://github.com/elliottcable/sugar-manager.sugar"]]];
-  [sugars addObject:[YRSugarRepresentation sugarWithName:@"Ruby"
-                                                  author:@"elliottcable"
-                                              identifier:@"name.elliottcable.Sugar.Ruby"
-                                             downloadURL:[NSURL URLWithString:@"http://github.com/elliottcable/ruby.sugar/tarball/master"]
-                                                 homeURL:[NSURL URLWithString:@"http://github.com/elliottcable/ruby.sugar"]]];
-  [sugars addObject:[YRSugarRepresentation sugarWithName:@"Regex"
-                                                  author:@"elliottcable"
-                                              identifier:@"name.elliottcable.Sugar.Regex"
-                                             downloadURL:[NSURL URLWithString:@"http://github.com/elliottcable/regex.sugar/tarball/master"]
-                                                 homeURL:[NSURL URLWithString:@"http://github.com/elliottcable/regex.sugar"]]];
+  [sugars addObject:[[YRSugarRepresentation sugarFromURL:[[NSURL URLWithString:@"file:///Users/elliottcable/Code/sugar-manager.sugar/Languages.xml"] retain]] retain]];
+  [sugars addObject:[[YRSugarRepresentation sugarFromURL:[[NSURL URLWithString:@"file:///Users/elliottcable/Code/ruby.sugar/Languages.xml"] retain]] retain]];
+  [sugars addObject:[[YRSugarRepresentation sugarFromURL:[[NSURL URLWithString:@"file:///Users/elliottcable/Code/regex.sugar/Languages.xml"] retain]] retain]];
   
   return self;
 }
