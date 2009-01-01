@@ -26,6 +26,8 @@
   sugar.downloadURL = aDownloadURL;
   sugar.homeURL = aHomeURL;
   
+  [sugar autorelease];
+  
   return sugar;
 }
 

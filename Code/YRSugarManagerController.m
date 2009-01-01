@@ -28,9 +28,7 @@
                                                         identifier:@"name.elliottcable.Sugar.Regex"
                                                        downloadURL:@"http://github.com/elliottcable/regex.sugar/tarball/master"
                                                            homeURL:@"http://github.com/elliottcable/regex.sugar"];
-  NSLog(@"- init ... adding %@ to %@", s1, sugars);
   [sugars addObject:s1]; [sugars addObject:s2]; [sugars addObject:s3];
-  [s1 release]; [s2 release]; [s3 release];
   
   return self;
 }
