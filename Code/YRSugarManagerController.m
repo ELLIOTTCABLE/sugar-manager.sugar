@@ -12,6 +12,26 @@
 {
   [super init];
   sugars = [NSMutableSet setWithCapacity:25];
+  
+  YRSugarRepresentation *s1 = [YRSugarRepresentation sugarWithName:@"Sugar Manager"
+                                                            author:@"elliottcable"
+                                                        identifier:@"name.elliottcable.Sugar.Manager"
+                                                       downloadURL:@"http://github.com/elliottcable/sugar-manager.sugar/tarball/master"
+                                                           homeURL:@"http://github.com/elliottcable/sugar-manager.sugar"];
+  YRSugarRepresentation *s2 = [YRSugarRepresentation sugarWithName:@"Ruby"
+                                                            author:@"elliottcable"
+                                                        identifier:@"name.elliottcable.Sugar.Ruby"
+                                                       downloadURL:@"http://github.com/elliottcable/ruby.sugar/tarball/master"
+                                                           homeURL:@"http://github.com/elliottcable/ruby.sugar"];
+  YRSugarRepresentation *s3 = [YRSugarRepresentation sugarWithName:@"Regex"
+                                                            author:@"elliottcable"
+                                                        identifier:@"name.elliottcable.Sugar.Regex"
+                                                       downloadURL:@"http://github.com/elliottcable/regex.sugar/tarball/master"
+                                                           homeURL:@"http://github.com/elliottcable/regex.sugar"];
+  NSLog(@"- init ... adding %@ to %@", s1, sugars);
+  [sugars addObject:s1]; [sugars addObject:s2]; [sugars addObject:s3];
+  [s1 release]; [s2 release]; [s3 release];
+  
   return self;
 }
 
