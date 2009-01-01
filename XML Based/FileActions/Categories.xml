@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <action-categories>
-	<category id="actions.file.ExampleSugar" show="sub">
-		<title>Example Sugar File Actions</title>
+	<category id="actions.file.SugarManager" show="sub">
+		<title>Sugar Management</title>
 	</category>
 </action-categories>

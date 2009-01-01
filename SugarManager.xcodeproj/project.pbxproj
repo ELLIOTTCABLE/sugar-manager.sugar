@@ -8,13 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3D0E843D0EC3EA940022EEE4 /* SugarManager.sugar in Copy To Espresso */ = {isa = PBXBuildFile; fileRef = 8D5B49B6048680CD000E48DA /* SugarManager.sugar */; };
-		3D65763F0E991E69009E9EB8 /* Itemizers in Copy XML Files */ = {isa = PBXBuildFile; fileRef = 3D65762A0E991E38009E9EB8 /* Itemizers */; };
-		3DE0B8D10ED337DF00EE948E /* MRExampleSugarTagCaseChanger.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE0B8D00ED337DF00EE948E /* MRExampleSugarTagCaseChanger.m */; };
-		3DE0B9EB0ED3567D00EE948E /* TextActions in Copy XML Files */ = {isa = PBXBuildFile; fileRef = 3DE0B9E60ED3566600EE948E /* TextActions */; };
 		3DE0BA990ED3621700EE948E /* FileActions in Copy XML Files */ = {isa = PBXBuildFile; fileRef = 3DE0BA940ED3620D00EE948E /* FileActions */; };
-		3DE0BA9C0ED3622400EE948E /* MRExampleSugarFileTypeDetectingAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE0BA9B0ED3622400EE948E /* MRExampleSugarFileTypeDetectingAction.m */; };
-		3DE0BB1D0ED36A1500EE948E /* MRExampleSugarAnnoyingTagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE0BB1C0ED36A1500EE948E /* MRExampleSugarAnnoyingTagItem.m */; };
-		51F26DDA0F0C523000630F37 /* TestWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51F26DD90F0C523000630F37 /* TestWindow.xib */; };
+		5150D41A0F0C65FF006DF3DD /* YRSugarManagerOpeningAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 5150D4190F0C65FF006DF3DD /* YRSugarManagerOpeningAction.m */; };
 		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
 		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
@@ -38,8 +33,6 @@
 			dstSubfolderSpec = 1;
 			files = (
 				3DE0BA990ED3621700EE948E /* FileActions in Copy XML Files */,
-				3D65763F0E991E69009E9EB8 /* Itemizers in Copy XML Files */,
-				3DE0B9EB0ED3567D00EE948E /* TextActions in Copy XML Files */,
 			);
 			name = "Copy XML Files";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,17 +44,10 @@
 		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
-		3D65762A0E991E38009E9EB8 /* Itemizers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Itemizers; sourceTree = "<group>"; };
 		3D657A0A0E9A6763009E9EB8 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
-		3DE0B8CF0ED337DF00EE948E /* MRExampleSugarTagCaseChanger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRExampleSugarTagCaseChanger.h; sourceTree = "<group>"; };
-		3DE0B8D00ED337DF00EE948E /* MRExampleSugarTagCaseChanger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRExampleSugarTagCaseChanger.m; sourceTree = "<group>"; };
-		3DE0B9E60ED3566600EE948E /* TextActions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TextActions; sourceTree = "<group>"; };
 		3DE0BA940ED3620D00EE948E /* FileActions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FileActions; sourceTree = "<group>"; };
-		3DE0BA9A0ED3622400EE948E /* MRExampleSugarFileTypeDetectingAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRExampleSugarFileTypeDetectingAction.h; sourceTree = "<group>"; };
-		3DE0BA9B0ED3622400EE948E /* MRExampleSugarFileTypeDetectingAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRExampleSugarFileTypeDetectingAction.m; sourceTree = "<group>"; };
-		3DE0BB1B0ED36A1500EE948E /* MRExampleSugarAnnoyingTagItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRExampleSugarAnnoyingTagItem.h; sourceTree = "<group>"; };
-		3DE0BB1C0ED36A1500EE948E /* MRExampleSugarAnnoyingTagItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRExampleSugarAnnoyingTagItem.m; sourceTree = "<group>"; };
-		51F26DD90F0C523000630F37 /* TestWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TestWindow.xib; path = "Code/File Actions/TestWindow.xib"; sourceTree = "<group>"; };
+		5150D4180F0C65FF006DF3DD /* YRSugarManagerOpeningAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRSugarManagerOpeningAction.h; sourceTree = "<group>"; };
+		5150D4190F0C65FF006DF3DD /* YRSugarManagerOpeningAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRSugarManagerOpeningAction.m; sourceTree = "<group>"; };
 		8D5B49B6048680CD000E48DA /* SugarManager.sugar */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SugarManager.sugar; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2F7E65807B2D6F200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
@@ -103,7 +89,6 @@
 		089C167CFE841241C02AAC07 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				51F26DD90F0C523000630F37 /* TestWindow.xib */,
 				8D5B49B7048680CD000E48DA /* Info.plist */,
 				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
 			);
@@ -114,8 +99,6 @@
 			isa = PBXGroup;
 			children = (
 				3DE0B8B50ED3261600EE948E /* File Actions */,
-				3DE0B8B70ED3261600EE948E /* Text Actions */,
-				3DE0B8B60ED3261600EE948E /* Itemizer */,
 				3D657A0A0E9A6763009E9EB8 /* Prefix.pch */,
 			);
 			path = Code;
@@ -151,8 +134,6 @@
 			isa = PBXGroup;
 			children = (
 				3DE0BA940ED3620D00EE948E /* FileActions */,
-				3D65762A0E991E38009E9EB8 /* Itemizers */,
-				3DE0B9E60ED3566600EE948E /* TextActions */,
 			);
 			path = "XML Based";
 			sourceTree = "<group>";
@@ -160,28 +141,10 @@
 		3DE0B8B50ED3261600EE948E /* File Actions */ = {
 			isa = PBXGroup;
 			children = (
-				3DE0BA9A0ED3622400EE948E /* MRExampleSugarFileTypeDetectingAction.h */,
-				3DE0BA9B0ED3622400EE948E /* MRExampleSugarFileTypeDetectingAction.m */,
+				5150D4180F0C65FF006DF3DD /* YRSugarManagerOpeningAction.h */,
+				5150D4190F0C65FF006DF3DD /* YRSugarManagerOpeningAction.m */,
 			);
 			path = "File Actions";
-			sourceTree = "<group>";
-		};
-		3DE0B8B60ED3261600EE948E /* Itemizer */ = {
-			isa = PBXGroup;
-			children = (
-				3DE0BB1B0ED36A1500EE948E /* MRExampleSugarAnnoyingTagItem.h */,
-				3DE0BB1C0ED36A1500EE948E /* MRExampleSugarAnnoyingTagItem.m */,
-			);
-			path = Itemizer;
-			sourceTree = "<group>";
-		};
-		3DE0B8B70ED3261600EE948E /* Text Actions */ = {
-			isa = PBXGroup;
-			children = (
-				3DE0B8CF0ED337DF00EE948E /* MRExampleSugarTagCaseChanger.h */,
-				3DE0B8D00ED337DF00EE948E /* MRExampleSugarTagCaseChanger.m */,
-			);
-			path = "Text Actions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,7 +175,7 @@
 /* Begin PBXProject section */
 		089C1669FE841209C02AAC07 /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "ExampleSugar" */;
+			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "SugarManager" */;
 			compatibilityVersion = "Xcode 3.1";
 			hasScannedForEncodings = 1;
 			mainGroup = 089C166AFE841209C02AAC07 /* CSS */;
@@ -230,7 +193,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */,
-				51F26DDA0F0C523000630F37 /* TestWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,9 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DE0B8D10ED337DF00EE948E /* MRExampleSugarTagCaseChanger.m in Sources */,
-				3DE0BA9C0ED3622400EE948E /* MRExampleSugarFileTypeDetectingAction.m in Sources */,
-				3DE0BB1D0ED36A1500EE948E /* MRExampleSugarAnnoyingTagItem.m in Sources */,
+				5150D41A0F0C65FF006DF3DD /* YRSugarManagerOpeningAction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,7 +303,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "ExampleSugar" */ = {
+		1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "SugarManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DEB913F08733D840010E9CD /* Debug */,
