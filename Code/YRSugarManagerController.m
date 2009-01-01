@@ -36,7 +36,8 @@
 }
 
 - (IBAction)downloadSugar:(id)sender {
-  NSLog(@"- downloadSugar: ... selection == %@", [sugarsController selectedObjects]);
+  NSURL *url = [[[sugarsController arrangedObjects] objectAtIndex:[sender clickedRow]] downloadURL];
+  NSLog(@"- downloadSugar: ... URL == %@", url);
 }
 
 - (void)dealloc {
