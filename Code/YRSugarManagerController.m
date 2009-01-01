@@ -12,9 +12,17 @@
   [super init];
   sugars = [NSMutableSet setWithCapacity:25];
   
-  [sugars addObject:[[YRSugarRepresentation sugarFromURL:[[NSURL URLWithString:@"file:///Users/elliottcable/Code/sugar-manager.sugar/Languages.xml"] retain]] retain]];
-  [sugars addObject:[[YRSugarRepresentation sugarFromURL:[[NSURL URLWithString:@"file:///Users/elliottcable/Code/ruby.sugar/Languages.xml"] retain]] retain]];
-  [sugars addObject:[[YRSugarRepresentation sugarFromURL:[[NSURL URLWithString:@"file:///Users/elliottcable/Code/regex.sugar/Languages.xml"] retain]] retain]];
+  YRSugarRepresentation *sugar;
+  sugar = [YRSugarRepresentation sugarFromURL:[NSURL URLWithString:@"file:///Users/elliottcable/Code/sugar-manager.sugar/Languages.xml"]];
+  if(sugar) [sugars addObject:sugar];
+  [sugar release];
+  sugar = [YRSugarRepresentation sugarFromURL:[NSURL URLWithString:@"file:///Users/elliottcable/Code/ruby.sugar/Languages.xml"]];
+  if(sugar) [sugars addObject:sugar];
+  [sugar release];
+  sugar = [YRSugarRepresentation sugarFromURL:[NSURL URLWithString:@"file:///Users/elliottcable/Code/regex.sugar/Languages.xml"]];
+  if(sugar) [sugars addObject:sugar];
+  [sugar release];
+  sugar = nil;
   
   return self;
 }
