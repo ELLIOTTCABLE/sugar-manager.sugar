@@ -7,6 +7,7 @@
 
 @interface YRSugarManagerController : NSWindowController {
   NSMutableSet *sugars;
+  IBOutlet NSArrayController *sugarsController;
 }
 - (IBAction)updateSugarsFromCoffeeHouse:(id)sender;
 @end

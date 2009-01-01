@@ -210,7 +210,7 @@
 														<reference key="NSBackgroundColor" ref="502437854"/>
 														<reference key="NSTextColor" ref="830401445"/>
 													</object>
-													<object class="NSButtonCell" key="NSDataCell" id="855060813">
+													<object class="NSButtonCell" key="NSDataCell" id="910392697">
 														<int key="NSCellFlags">67239424</int>
 														<int key="NSCellFlags2">134348800</int>
 														<string key="NSContents">Download</string>
@@ -438,6 +438,14 @@
 					</object>
 					<int key="connectionID">40</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">sugarsController</string>
+						<reference key="source" ref="1001"/>
+						<reference key="destination" ref="77464455"/>
+					</object>
+					<int key="connectionID">42</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -565,7 +573,7 @@
 						<reference key="object" ref="12484580"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="855060813"/>
+							<reference ref="910392697"/>
 						</object>
 						<reference key="parent" ref="77327479"/>
 					</object>
@@ -599,7 +607,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">41</int>
-						<reference key="object" ref="855060813"/>
+						<reference key="object" ref="910392697"/>
 						<reference key="parent" ref="12484580"/>
 					</object>
 				</object>
@@ -675,7 +683,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">41</int>
+			<int key="maxID">42</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -686,6 +694,10 @@
 					<object class="NSMutableDictionary" key="actions">
 						<string key="NS.key.0">updateSugarsFromCoffeeHouse:</string>
 						<string key="NS.object.0">id</string>
+					</object>
+					<object class="NSMutableDictionary" key="outlets">
+						<string key="NS.key.0">sugarsController</string>
+						<string key="NS.object.0">NSArrayController</string>
 					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
