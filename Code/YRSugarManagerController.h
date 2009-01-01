@@ -10,5 +10,5 @@
   IBOutlet NSArrayController *sugarsController;
 }
 - (IBAction)updateSugarsFromCoffeeHouse:(id)sender;
-- (IBAction)downloadSugar:(id)sender;
+- (IBAction)installSugar:(id)sender;
 @end

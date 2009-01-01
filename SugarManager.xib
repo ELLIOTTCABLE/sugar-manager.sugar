@@ -8,7 +8,7 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="41"/>
+			<integer value="24"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -213,7 +213,7 @@
 													<object class="NSButtonCell" key="NSDataCell" id="241756246">
 														<int key="NSCellFlags">67239424</int>
 														<int key="NSCellFlags2">134348800</int>
-														<string key="NSContents">Download</string>
+														<string key="NSContents">Install</string>
 														<reference key="NSSupport" ref="26"/>
 														<reference key="NSControlView" ref="77327479"/>
 														<int key="NSButtonFlags">-2034482945</int>
@@ -432,11 +432,11 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
-						<string key="label">downloadSugar:</string>
+						<string key="label">installSugar:</string>
 						<reference key="source" ref="1001"/>
 						<reference key="destination" ref="241756246"/>
 					</object>
-					<int key="connectionID">43</int>
+					<int key="connectionID">44</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -675,7 +675,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">43</int>
+			<int key="maxID">44</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -687,7 +687,7 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSMutableArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>downloadSugar:</string>
+							<string>installSugar:</string>
 							<string>updateSugarsFromCoffeeHouse:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">

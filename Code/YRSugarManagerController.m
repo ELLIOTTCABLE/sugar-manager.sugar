@@ -28,9 +28,9 @@
   
 }
 
-- (IBAction)downloadSugar:(id)sender {
-  NSURL *url = [[[sugarsController arrangedObjects] objectAtIndex:[sender clickedRow]] downloadURL];
-  NSLog(@"- downloadSugar: ... URL == %@", url);
+- (IBAction)installSugar:(id)sender {
+  YRSugarRepresentation *sugar = [[sugarsController arrangedObjects] objectAtIndex:[sender clickedRow]];
+  NSLog(@"- installSugar:%@", sugar);
 }
 
 - (void)dealloc {
