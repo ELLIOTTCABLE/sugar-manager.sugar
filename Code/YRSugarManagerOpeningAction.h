@@ -4,7 +4,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-@class YRSugarManagerController;
+#import "YRSugarManagerController.h";
 
 @interface YRSugarManagerOpeningAction : NSObject {
   YRSugarManagerController *sugarManagerController;

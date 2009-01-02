@@ -4,7 +4,7 @@
 //
 
 #import "YRSugarManagerController.h"
-@class YRSugarRepresentation;
+#import "YRSugarRepresentation.h";
 
 @implementation YRSugarManagerController
 
