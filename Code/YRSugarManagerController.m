@@ -21,11 +21,37 @@
   if(sugar) [sugars addObject:sugar];
   sugar = nil;
   
+  [self updateSugarsFromApplicationSupport:NULL];
+  
   return self;
 }
 
-- (void)updateSugarsFromCoffeeHouse:(id)sender {
-  
+- (IBAction)updateSugarsFromApplicationSupport:(id)sender {
+  NSLog(@"- updateSugarsFromApplicationSupport:");
+  NSString *applicationSupportPath = [NSHomeDirectory() stringByAppendingPathComponent:@"Library/Application Support/Espresso/Sugars"];
+  NSDirectoryEnumerator *enumerator = [[NSFileManager defaultManager] enumeratorAtPath:applicationSupportPath];
+  NSString *sugarDir;
+  while (sugarDir = [enumerator nextObject]) {
+    [enumerator skipDescendents];
+    if ([[sugarDir pathExtension] isEqualToString:@"sugar"]) {
+      NSLog(@"- updateSugarsFromApplicationSupport: ... enumerating %@", sugarDir);
+      NSString *languagesXMLPlain = [[applicationSupportPath stringByAppendingPathComponent:sugarDir] stringByAppendingPathComponent:@"Languages.xml"];
+      NSString *languagesXMLCompiled = [[applicationSupportPath stringByAppendingPathComponent:sugarDir] stringByAppendingPathComponent:@"Contents/Resources/Languages.xml"];
+      BOOL plainExists = [[NSFileManager defaultManager] fileExistsAtPath:languagesXMLPlain];
+      BOOL compiledExists = [[NSFileManager defaultManager] fileExistsAtPath:languagesXMLCompiled];
+      YRSugarRepresentation *sugar = nil;
+      if(plainExists) {
+        sugar = [YRSugarRepresentation sugarFromURL:[NSURL fileURLWithPath:languagesXMLPlain]];
+      } else if(compiledExists) {
+        sugar = [YRSugarRepresentation sugarFromURL:[NSURL fileURLWithPath:languagesXMLCompiled]];
+      }
+      if(sugar) [sugars addObject:sugar];
+    }
+  }
+}
+
+- (IBAction)updateSugarsFromCoffeeHouse:(id)sender {
+  NSLog(@"- updateSugarsFromCoffeeHouse:");
 }
 
 - (IBAction)installSugar:(id)sender {
