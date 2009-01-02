@@ -22,6 +22,7 @@
          identifier:(NSString *)anIdentifier
         downloadURL:(NSURL *)aDownloadURL
      downloadFormat:(NSString *)aDownloadFormat
+          installed:(BOOL)isInstalled
             homeURL:(NSURL *)aHomeURL
        dependencies:(NSArray *)someDependencies {
   YRSugarRepresentation *sugar = [[self alloc] init];
@@ -31,6 +32,7 @@
   sugar.identifier = [anIdentifier retain];
   sugar.downloadURL = [aDownloadURL retain];
   sugar.downloadFormat = [aDownloadFormat retain];
+  [sugar setInstalled:isInstalled];
   sugar.homeURL = [aHomeURL retain];
   sugar.dependencies = [someDependencies retain];
   
@@ -71,6 +73,7 @@
                                           identifier:anIdentifier
                                          downloadURL:[NSURL URLWithString:aDownloadURL]
                                       downloadFormat:aDownloadFormat
+                                           installed:NO
                                              homeURL:[NSURL URLWithString:aHomeURL]
                                         dependencies:[NSArray arrayWithArray:someDependencies]];
   

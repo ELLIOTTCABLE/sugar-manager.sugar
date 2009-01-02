@@ -45,7 +45,7 @@
       } else if(compiledExists) {
         sugar = [YRSugarRepresentation sugarFromURL:[NSURL fileURLWithPath:languagesXMLCompiled]];
       }
-      if(sugar) [sugars addObject:sugar];
+      if(sugar) { [sugar setInstalled:YES]; [sugars addObject:sugar]; }
     }
   }
 }

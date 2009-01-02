@@ -31,6 +31,7 @@
          identifier:(NSString *)anIdentifier
         downloadURL:(NSURL *)aDownloadURL
      downloadFormat:(NSString *)aDownloadFormat
+          installed:(BOOL)isInstalled
             homeURL:(NSURL *)aHomeURL
        dependencies:(NSArray *)someDependencies;
 + (id)sugarFromURL:(NSURL *)languagesXMLURL;
