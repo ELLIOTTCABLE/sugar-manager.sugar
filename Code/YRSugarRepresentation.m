@@ -12,6 +12,8 @@
 @synthesize identifier;
 @synthesize downloadURL;
 @synthesize downloadFormat;
+- (BOOL)installed { return installed; }
+- (void)setInstalled:(BOOL)isInstalled { installed = isInstalled; }
 @synthesize homeURL;
 @synthesize dependencies;
 

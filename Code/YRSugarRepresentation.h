@@ -11,6 +11,7 @@
   NSString *identifier;
   NSURL *downloadURL;
   NSString *downloadFormat;
+  BOOL installed;
   NSURL *homeURL;
   NSArray *dependencies;
 }
@@ -20,6 +21,8 @@
 @property (readwrite, copy) NSString *identifier;
 @property (readwrite, copy) NSURL *downloadURL;
 @property (readwrite, copy) NSString *downloadFormat;
+- (BOOL)installed;
+- (void)setInstalled:(BOOL)isInstalled;
 @property (readwrite, copy) NSURL *homeURL;
 @property (readwrite, copy) NSArray *dependencies;
 
