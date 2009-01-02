@@ -13,11 +13,11 @@
   sugars = [[NSMutableSet setWithCapacity:25] retain];
   
   YRSugarRepresentation *sugar;
-  sugar = [YRSugarRepresentation sugarFromURL:[NSURL URLWithString:@"file:///Users/elliottcable/Code/sugar-manager.sugar/Languages.xml"]];
+  sugar = [YRSugarRepresentation sugarFromURL:[NSURL fileURLWithPath:[@"~/Desktop/ruby.sugar/Languages.xml" stringByExpandingTildeInPath]]];
   if(sugar) [sugars addObject:sugar];
-  sugar = [YRSugarRepresentation sugarFromURL:[NSURL URLWithString:@"file:///Users/elliottcable/Code/ruby.sugar/Languages.xml"]];
+  sugar = [YRSugarRepresentation sugarFromURL:[NSURL fileURLWithPath:[@"~/Desktop/regex.sugar/Languages.xml" stringByExpandingTildeInPath]]];
   if(sugar) [sugars addObject:sugar];
-  sugar = [YRSugarRepresentation sugarFromURL:[NSURL URLWithString:@"file:///Users/elliottcable/Code/regex.sugar/Languages.xml"]];
+  sugar = [YRSugarRepresentation sugarFromURL:[NSURL fileURLWithPath:[@"~/Desktop/sugar-manager.sugar/Languages.xml" stringByExpandingTildeInPath]]];
   if(sugar) [sugars addObject:sugar];
   sugar = nil;
   
@@ -38,6 +38,11 @@
 
 - (void)installSugarFromRaw:(id)sugar {
   NSLog(@"- installSugarFromRaw:%@", sugar);
+  NSFileManager *fileSystem = [NSFileManager defaultManager];
+  NSString *from = [[sugar downloadURL] path];
+  NSString *to = [[@"~/Library/Application Support/Espresso/Sugars/" stringByExpandingTildeInPath] stringByAppendingPathComponent:[from lastPathComponent]];
+  NSLog(@"- installSugarFromRaw:%@ ... copying from %@ to %@", sugar, from, to);
+  [fileSystem copyPath:from toPath:to handler:NULL];
 }
 
 - (void)installSugarFromTgz:(id)sugar {
