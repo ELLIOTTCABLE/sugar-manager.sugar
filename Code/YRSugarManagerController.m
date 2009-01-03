@@ -81,14 +81,18 @@
   NSLog(@"- updateSugarsFromGoogleCode:");
 }
 
-- (IBAction)installSugar:(id)sender {
+- (IBAction)installSugarAction:(id)sender {
   [progressIndicator startAnimation:self];
   YRSugarRepresentation *sugar = [[sugarsController arrangedObjects] objectAtIndex:[sender clickedRow]];
+  [self installSugar:sugar];
+  [progressIndicator stopAnimation:self];
+}
+// The nullarg is necessary to differentiate this from the above IBAction
+- (BOOL)installSugar:(id)sugar {
   NSLog(@"- installSugar:%@", sugar);
   
   SEL selector = NSSelectorFromString([NSString stringWithFormat:@"installSugarFrom%@:", [[sugar downloadFormat] capitalizedString]]);
   [self performSelector:selector withObject:sugar];
-  [progressIndicator stopAnimation:self];
 }
 
 - (void)installSugarFromRaw:(id)sugar {

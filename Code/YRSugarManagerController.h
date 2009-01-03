@@ -16,5 +16,5 @@
 - (void)updateSugarsFromCoffeeHouse;
 - (void)updateSugarsFromGitHub;
 - (void)updateSugarsFromGoogleCode;
-- (IBAction)installSugar:(id)sender;
+- (IBAction)installSugarAction:(id)sender;
 @end
