@@ -89,10 +89,22 @@
 // The nullarg is necessary to differentiate this from the above IBAction
 - (BOOL)installSugar:(id)sugar {
   NSLog(@"- installSugar:%@", sugar);
+  BOOL result = NO;
+  
+  NSEnumerator *dependencyEnumerator = [[sugar dependencies] objectEnumerator];
+  YRSugarRepresentation *dependency = nil;
+  NSString *dependencyIdentifier = nil;
+  while (dependencyIdentifier = [dependencyEnumerator nextObject]) {
+    dependency = [self sugarByIdentifier:dependencyIdentifier];
+    if(!dependency) return NO;
+    result = [self installSugar:dependency];
+    if(!result) return NO;
+  }
+  NSLog(@"- installSugar:%@ ... dependencies installed successfully", sugar);
   
   SEL selector = NSSelectorFromString([NSString stringWithFormat:@"installSugarFrom%@:", [[sugar downloadFormat] capitalizedString]]);
   [self performSelector:selector withObject:sugar];
-  return YES;
+  return result;
 }
 
 - (BOOL)installSugarFromRaw:(id)sugar {
