@@ -54,6 +54,14 @@
   NSLog(@"- updateSugarsFromCoffeeHouse:");
 }
 
+- (IBAction)updateSugarsFromGitHub:(id)sender {
+  NSLog(@"- updateSugarsFromGitHub:");
+}
+
+- (IBAction)updateSugarsFromGoogleCode:(id)sender {
+  NSLog(@"- updateSugarsFromGoogleCode:");
+}
+
 - (IBAction)installSugar:(id)sender {
   YRSugarRepresentation *sugar = [[sugarsController arrangedObjects] objectAtIndex:[sender clickedRow]];
   NSLog(@"- installSugar:%@", sugar);
