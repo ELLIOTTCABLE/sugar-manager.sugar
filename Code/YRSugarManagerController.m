@@ -92,31 +92,37 @@
   
   SEL selector = NSSelectorFromString([NSString stringWithFormat:@"installSugarFrom%@:", [[sugar downloadFormat] capitalizedString]]);
   [self performSelector:selector withObject:sugar];
+  return YES;
 }
 
-- (void)installSugarFromRaw:(id)sugar {
+- (BOOL)installSugarFromRaw:(id)sugar {
   NSLog(@"- installSugarFromRaw:%@", sugar);
   NSFileManager *fileSystem = [NSFileManager defaultManager];
   NSString *from = [[sugar downloadURL] path];
   NSString *to = [[@"~/Library/Application Support/Espresso/Sugars/" stringByExpandingTildeInPath] stringByAppendingPathComponent:[from lastPathComponent]];
   NSLog(@"- installSugarFromRaw:%@ ... copying from %@ to %@", sugar, from, to);
   [fileSystem copyPath:from toPath:to handler:NULL];
+  return YES;
 }
 
-- (void)installSugarFromTgz:(id)sugar {
+- (BOOL)installSugarFromTgz:(id)sugar {
   NSLog(@"- installSugarFromTgz:%@", sugar);
+  return NO;
 }
 
-- (void)installSugarFromZip:(id)sugar {
+- (BOOL)installSugarFromZip:(id)sugar {
   NSLog(@"- installSugarFromZip:%@", sugar);
+  return NO;
 }
 
-- (void)installSugarFromSvn:(id)sugar {
+- (BOOL)installSugarFromSvn:(id)sugar {
   NSLog(@"- installSugarFromSvn:%@", sugar);
+  return NO;
 }
 
-- (void)installSugarFromGit:(id)sugar {
+- (BOOL)installSugarFromGit:(id)sugar {
   NSLog(@"- installSugarFromGit:%@", sugar);
+  return NO;
 }
 
 - (void)dealloc {
