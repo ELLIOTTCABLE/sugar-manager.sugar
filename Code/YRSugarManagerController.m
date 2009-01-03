@@ -82,7 +82,7 @@ const NSString *YRSugarManagerErrorDomain = @"name.elliottcable.Sugar.Manager.Er
 
 - (BOOL)installSugar:(YRSugarRepresentation *)sugar error:(NSError **)errorProxy {
   NSLog(@"- installSugar:%@", sugar);
-  BOOL result = NO;
+  BOOL result = YES;
   
   NSEnumerator *dependencyEnumerator = [[sugar dependencies] objectEnumerator];
   YRSugarRepresentation *dependency = nil;
@@ -114,15 +114,21 @@ const NSString *YRSugarManagerErrorDomain = @"name.elliottcable.Sugar.Manager.Er
   
   SEL selector = NSSelectorFromString([NSString stringWithFormat:@"installSugarFrom%@:", [[sugar downloadFormat] capitalizedString]]);
   NSMethodSignature *signature = [[self class] instanceMethodSignatureForSelector:selector];
-  if(result && signature != nil) {
+  if(signature) {
     NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:signature];
     [invocation setSelector:selector];
     [invocation setTarget:self];
     [invocation setArgument:&sugar atIndex:2];
     [invocation invoke];
     [invocation getReturnValue:&result];
+    return result;
+  } else {
+    NSDictionary *userInfoDictionary = [NSDictionary dictionaryWithObjectsAndKeys:
+                                        NSLocalizedDescriptionKey,	[NSString stringWithFormat:@"No installer for format '%@'", [sugar downloadFormat]],
+                                        NSUnderlyingErrorKey,			nil];
+    if(errorProxy) *errorProxy = [NSError errorWithDomain:(id)YRSugarManagerErrorDomain code:YREUnkDep userInfo:userInfoDictionary];
+    return NO;
   }
-  return result;
 }
 
 - (BOOL)installSugarFromRaw:(id)sugar {
