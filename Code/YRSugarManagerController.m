@@ -89,7 +89,10 @@ const NSString *YRSugarManagerErrorDomain = @"name.elliottcable.Sugar.Manager.Er
   NSString *dependencyIdentifier = nil;
   while (dependencyIdentifier = [dependencyEnumerator nextObject]) {
     dependency = [self sugarByIdentifier:dependencyIdentifier];
-    if(!dependency) return NO;
+    if(!dependency) {
+      if(errorProxy) *errorProxy = [NSError errorWithDomain:(id)YRSugarManagerErrorDomain code:YREUnkDep userInfo:nil];
+      return NO;
+    }
     result = [self installSugar:dependency error:NULL];
     if(!result) return NO;
   }
