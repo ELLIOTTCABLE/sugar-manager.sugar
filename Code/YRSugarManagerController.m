@@ -14,16 +14,26 @@
   
   YRSugarRepresentation *sugar;
   sugar = [YRSugarRepresentation sugarFromURL:[NSURL fileURLWithPath:[@"~/Desktop/ruby.sugar/Languages.xml" stringByExpandingTildeInPath]]];
-  if(sugar) [sugars addObject:sugar];
+  if(sugar && ![self sugarByIdentifier:[sugar identifier]]) [sugars addObject:sugar];
   sugar = [YRSugarRepresentation sugarFromURL:[NSURL fileURLWithPath:[@"~/Desktop/regex.sugar/Languages.xml" stringByExpandingTildeInPath]]];
-  if(sugar) [sugars addObject:sugar];
+  if(sugar && ![self sugarByIdentifier:[sugar identifier]]) [sugars addObject:sugar];
   sugar = [YRSugarRepresentation sugarFromURL:[NSURL fileURLWithPath:[@"~/Desktop/sugar-manager.sugar/Languages.xml" stringByExpandingTildeInPath]]];
-  if(sugar) [sugars addObject:sugar];
+  if(sugar && ![self sugarByIdentifier:[sugar identifier]]) [sugars addObject:sugar];
   sugar = nil;
   
   [self updateSugars:NULL];
   
   return self;
+}
+
+- (id)sugarByIdentifier:(id)identifier {
+  NSEnumerator *enumerator = [sugars objectEnumerator];
+  YRSugarRepresentation *aSugar = nil;
+  while (aSugar = [enumerator nextObject]) {
+    if([aSugar identifier] == identifier)
+      return aSugar;
+  }
+  return nil;
 }
 
 - (IBAction)updateSugars:(id)sender {
@@ -54,7 +64,7 @@
       } else if(compiledExists) {
         sugar = [YRSugarRepresentation sugarFromURL:[NSURL fileURLWithPath:languagesXMLCompiled]];
       }
-      if(sugar) { [sugar setInstalled:YES]; [sugars addObject:sugar]; }
+      if(sugar && ![self sugarByIdentifier:[sugar identifier]]) { [sugar setInstalled:YES]; [sugars addObject:sugar]; }
     }
   }
 }

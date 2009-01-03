@@ -10,6 +10,7 @@
   IBOutlet NSArrayController *sugarsController;
   IBOutlet NSProgressIndicator *progressIndicator;
 }
+- (id)sugarByIdentifier:(id)identifier;
 - (IBAction)updateSugars:(id)sender;
 - (void)updateSugarsFromApplicationSupport;
 - (void)updateSugarsFromCoffeeHouse;
