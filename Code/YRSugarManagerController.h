@@ -18,5 +18,5 @@
 - (void)updateSugarsFromGitHub;
 - (void)updateSugarsFromGoogleCode;
 - (IBAction)installSugarAction:(id)sender;
-- (BOOL)installSugar:(YRSugarRepresentation *)sugar;
+- (BOOL)installSugar:(YRSugarRepresentation *)sugar error:(NSError **)errorProxy;
 @end

@@ -83,11 +83,11 @@
 - (IBAction)installSugarAction:(id)sender {
   [progressIndicator startAnimation:self];
   YRSugarRepresentation *sugar = [[sugarsController arrangedObjects] objectAtIndex:[sender clickedRow]];
-  [self installSugar:sugar];
+  [self installSugar:sugar error:NULL];
   [progressIndicator stopAnimation:self];
 }
 
-- (BOOL)installSugar:(YRSugarRepresentation *)sugar {
+- (BOOL)installSugar:(YRSugarRepresentation *)sugar error:(NSError **)errorProxy {
   NSLog(@"- installSugar:%@", sugar);
   BOOL result = NO;
   
@@ -97,7 +97,7 @@
   while (dependencyIdentifier = [dependencyEnumerator nextObject]) {
     dependency = [self sugarByIdentifier:dependencyIdentifier];
     if(!dependency) return NO;
-    result = [self installSugar:dependency];
+    result = [self installSugar:dependency error:NULL];
     if(!result) return NO;
   }
   NSLog(@"- installSugar:%@ ... dependencies installed successfully", sugar);
