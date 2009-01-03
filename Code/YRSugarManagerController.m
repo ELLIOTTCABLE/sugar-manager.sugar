@@ -88,13 +88,27 @@ const NSString *YRSugarManagerErrorDomain = @"name.elliottcable.Sugar.Manager.Er
   YRSugarRepresentation *dependency = nil;
   NSString *dependencyIdentifier = nil;
   while (dependencyIdentifier = [dependencyEnumerator nextObject]) {
+    
     dependency = [self sugarByIdentifier:dependencyIdentifier];
     if(!dependency) {
-      if(errorProxy) *errorProxy = [NSError errorWithDomain:(id)YRSugarManagerErrorDomain code:YREUnkDep userInfo:nil];
+      NSDictionary *userInfoDictionary = [NSDictionary dictionaryWithObjectsAndKeys:
+                                          NSLocalizedDescriptionKey,	[NSString stringWithFormat:@"Unknown dependency: %@", dependencyIdentifier],
+                                          NSUnderlyingErrorKey,			nil];
+      if(errorProxy) *errorProxy = [NSError errorWithDomain:(id)YRSugarManagerErrorDomain code:YREUnkDep userInfo:userInfoDictionary];
       return NO;
     }
-    result = [self installSugar:dependency error:NULL];
-    if(!result) return NO;
+    
+    
+    NSError *dependencyInstallError = nil;
+    result = [self installSugar:dependency error:&dependencyInstallError];
+    if(!result) {
+      NSDictionary *userInfoDictionary = [NSDictionary dictionaryWithObjectsAndKeys:
+                                          NSLocalizedDescriptionKey,	[NSString stringWithFormat:@"Dependency failed to install: %@", dependencyIdentifier],
+                                          NSUnderlyingErrorKey,			dependencyInstallError];
+      if(errorProxy) *errorProxy = [NSError errorWithDomain:(id)YRSugarManagerErrorDomain code:YREUnkDep userInfo:userInfoDictionary];
+      return NO;
+    }
+    
   }
   NSLog(@"- installSugar:%@ ... dependencies installed successfully", sugar);
   
