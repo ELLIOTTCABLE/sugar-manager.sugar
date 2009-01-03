@@ -27,10 +27,12 @@
 }
 
 - (IBAction)updateSugars:(id)sender {
+  [progressIndicator startAnimation:self];
   [self updateSugarsFromApplicationSupport];
   [self updateSugarsFromCoffeeHouse];
   [self updateSugarsFromGitHub];
   [self updateSugarsFromGoogleCode];
+  [progressIndicator stopAnimation:self];
 }
 
 - (void)updateSugarsFromApplicationSupport {

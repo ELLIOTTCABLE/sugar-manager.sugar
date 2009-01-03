@@ -8,6 +8,7 @@
 @interface YRSugarManagerController : NSWindowController {
   NSMutableSet *sugars;
   IBOutlet NSArrayController *sugarsController;
+  IBOutlet NSProgressIndicator *progressIndicator;
 }
 - (IBAction)updateSugars:(id)sender;
 - (void)updateSugarsFromApplicationSupport;
