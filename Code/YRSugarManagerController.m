@@ -21,12 +21,19 @@
   if(sugar) [sugars addObject:sugar];
   sugar = nil;
   
-  [self updateSugarsFromApplicationSupport:NULL];
+  [self updateSugars:NULL];
   
   return self;
 }
 
-- (IBAction)updateSugarsFromApplicationSupport:(id)sender {
+- (IBAction)updateSugars:(id)sender {
+  [self updateSugarsFromApplicationSupport];
+  [self updateSugarsFromCoffeeHouse];
+  [self updateSugarsFromGitHub];
+  [self updateSugarsFromGoogleCode];
+}
+
+- (void)updateSugarsFromApplicationSupport {
   NSLog(@"- updateSugarsFromApplicationSupport:");
   NSString *applicationSupportPath = [NSHomeDirectory() stringByAppendingPathComponent:@"Library/Application Support/Espresso/Sugars"];
   NSDirectoryEnumerator *enumerator = [[NSFileManager defaultManager] enumeratorAtPath:applicationSupportPath];
@@ -50,15 +57,15 @@
   }
 }
 
-- (IBAction)updateSugarsFromCoffeeHouse:(id)sender {
+- (void)updateSugarsFromCoffeeHouse {
   NSLog(@"- updateSugarsFromCoffeeHouse:");
 }
 
-- (IBAction)updateSugarsFromGitHub:(id)sender {
+- (void)updateSugarsFromGitHub {
   NSLog(@"- updateSugarsFromGitHub:");
 }
 
-- (IBAction)updateSugarsFromGoogleCode:(id)sender {
+- (void)updateSugarsFromGoogleCode {
   NSLog(@"- updateSugarsFromGoogleCode:");
 }
 

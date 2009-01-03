@@ -9,9 +9,10 @@
   NSMutableSet *sugars;
   IBOutlet NSArrayController *sugarsController;
 }
-- (IBAction)updateSugarsFromApplicationSupport:(id)sender;
-- (IBAction)updateSugarsFromCoffeeHouse:(id)sender;
-- (IBAction)updateSugarsFromGitHub:(id)sender;
-- (IBAction)updateSugarsFromGoogleCode:(id)sender;
+- (IBAction)updateSugars:(id)sender;
+- (void)updateSugarsFromApplicationSupport;
+- (void)updateSugarsFromCoffeeHouse;
+- (void)updateSugarsFromGitHub;
+- (void)updateSugarsFromGoogleCode;
 - (IBAction)installSugar:(id)sender;
 @end
