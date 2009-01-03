@@ -103,7 +103,15 @@
   NSLog(@"- installSugar:%@ ... dependencies installed successfully", sugar);
   
   SEL selector = NSSelectorFromString([NSString stringWithFormat:@"installSugarFrom%@:", [[sugar downloadFormat] capitalizedString]]);
-  if(result) result = [self performSelector:selector withObject:sugar];
+  NSMethodSignature *signature = [[self class] instanceMethodSignatureForSelector:selector];
+  if(result && signature != nil) {
+    NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:signature];
+    [invocation setSelector:selector];
+    [invocation setTarget:self];
+    [invocation setArgument:&sugar atIndex:2];
+    [invocation invoke];
+    [invocation getReturnValue:&result];
+  }
   return result;
 }
 
