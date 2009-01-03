@@ -6,6 +6,11 @@
 #import <Cocoa/Cocoa.h>
 #import "YRSugarRepresentation.h"
 
+extern const NSString *YRSugarManagerErrorDomain;
+enum YRErrors {
+  YREUnkDep
+};
+
 @interface YRSugarManagerController : NSWindowController {
   NSMutableSet *sugars;
   IBOutlet NSArrayController *sugarsController;

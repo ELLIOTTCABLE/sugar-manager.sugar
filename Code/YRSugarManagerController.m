@@ -5,6 +5,8 @@
 
 #import "YRSugarManagerController.h"
 
+const NSString *YRSugarManagerErrorDomain = @"name.elliottcable.Sugar.Manager.ErrorDomain";
+
 @implementation YRSugarManagerController
 
 - (id)init {
