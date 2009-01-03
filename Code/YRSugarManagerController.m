@@ -72,11 +72,13 @@
 }
 
 - (IBAction)installSugar:(id)sender {
+  [progressIndicator startAnimation:self];
   YRSugarRepresentation *sugar = [[sugarsController arrangedObjects] objectAtIndex:[sender clickedRow]];
   NSLog(@"- installSugar:%@", sugar);
   
   SEL selector = NSSelectorFromString([NSString stringWithFormat:@"installSugarFrom%@:", [[sugar downloadFormat] capitalizedString]]);
   [self performSelector:selector withObject:sugar];
+  [progressIndicator stopAnimation:self];
 }
 
 - (void)installSugarFromRaw:(id)sugar {
