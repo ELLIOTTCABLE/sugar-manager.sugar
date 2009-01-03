@@ -18,4 +18,5 @@
 - (void)updateSugarsFromGitHub;
 - (void)updateSugarsFromGoogleCode;
 - (IBAction)installSugarAction:(id)sender;
+- (BOOL)installSugar:(YRSugarRepresentation *)sugar;
 @end

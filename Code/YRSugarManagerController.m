@@ -86,8 +86,8 @@
   [self installSugar:sugar];
   [progressIndicator stopAnimation:self];
 }
-// The nullarg is necessary to differentiate this from the above IBAction
-- (BOOL)installSugar:(id)sugar {
+
+- (BOOL)installSugar:(YRSugarRepresentation *)sugar {
   NSLog(@"- installSugar:%@", sugar);
   BOOL result = NO;
   
