@@ -103,7 +103,7 @@
   NSLog(@"- installSugar:%@ ... dependencies installed successfully", sugar);
   
   SEL selector = NSSelectorFromString([NSString stringWithFormat:@"installSugarFrom%@:", [[sugar downloadFormat] capitalizedString]]);
-  [self performSelector:selector withObject:sugar];
+  if(result) result = [self performSelector:selector withObject:sugar];
   return result;
 }
 
