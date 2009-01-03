@@ -8,7 +8,7 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="2"/>
+			<integer value="24"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -211,7 +211,7 @@
 														<reference key="NSTextColor" ref="830401445"/>
 													</object>
 													<object class="NSButtonCell" key="NSDataCell" id="241756246">
-														<int key="NSCellFlags">67239424</int>
+														<int key="NSCellFlags">604110336</int>
 														<int key="NSCellFlags2">134348800</int>
 														<string key="NSContents">Install</string>
 														<reference key="NSSupport" ref="26"/>
@@ -438,6 +438,26 @@
 						<reference key="destination" ref="241756246"/>
 					</object>
 					<int key="connectionID">44</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">enabled: selection.installed</string>
+						<reference key="source" ref="241756246"/>
+						<reference key="destination" ref="77464455"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="241756246"/>
+							<reference key="NSDestination" ref="77464455"/>
+							<string key="NSLabel">enabled: selection.installed</string>
+							<string key="NSBinding">enabled</string>
+							<string key="NSKeyPath">selection.installed</string>
+							<object class="NSDictionary" key="NSOptions">
+								<string key="NS.key.0">NSValueTransformerName</string>
+								<string key="NS.object.0">NSNegateBoolean</string>
+							</object>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">48</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -676,7 +696,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">45</int>
+			<int key="maxID">50</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
