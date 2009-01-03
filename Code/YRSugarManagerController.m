@@ -13,15 +13,6 @@ const NSString *YRSugarManagerErrorDomain = @"name.elliottcable.Sugar.Manager.Er
   [super init];
   sugars = [[NSMutableSet setWithCapacity:25] retain];
   
-  YRSugarRepresentation *sugar;
-  sugar = [YRSugarRepresentation sugarFromURL:[NSURL fileURLWithPath:[@"~/Desktop/ruby.sugar/Languages.xml" stringByExpandingTildeInPath]]];
-  if(sugar && ![self sugarByIdentifier:[sugar identifier]]) [sugars addObject:sugar];
-  sugar = [YRSugarRepresentation sugarFromURL:[NSURL fileURLWithPath:[@"~/Desktop/regex.sugar/Languages.xml" stringByExpandingTildeInPath]]];
-  if(sugar && ![self sugarByIdentifier:[sugar identifier]]) [sugars addObject:sugar];
-  sugar = [YRSugarRepresentation sugarFromURL:[NSURL fileURLWithPath:[@"~/Desktop/sugar-manager.sugar/Languages.xml" stringByExpandingTildeInPath]]];
-  if(sugar && ![self sugarByIdentifier:[sugar identifier]]) [sugars addObject:sugar];
-  sugar = nil;
-  
   [self updateSugars:NULL];
   
   return self;
