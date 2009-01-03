@@ -117,12 +117,13 @@
 
 - (BOOL)installSugarFromRaw:(id)sugar {
   NSLog(@"- installSugarFromRaw:%@", sugar);
+  BOOL result = NO;
   NSFileManager *fileSystem = [NSFileManager defaultManager];
   NSString *from = [[sugar downloadURL] path];
   NSString *to = [[@"~/Library/Application Support/Espresso/Sugars/" stringByExpandingTildeInPath] stringByAppendingPathComponent:[from lastPathComponent]];
   NSLog(@"- installSugarFromRaw:%@ ... copying from %@ to %@", sugar, from, to);
-  [fileSystem copyPath:from toPath:to handler:NULL];
-  return YES;
+  if(result) result = [fileSystem copyPath:from toPath:to handler:NULL];
+  return result;
 }
 
 - (BOOL)installSugarFromTgz:(id)sugar {
