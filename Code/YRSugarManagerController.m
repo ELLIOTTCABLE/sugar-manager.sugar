@@ -13,7 +13,7 @@ const NSString *YRSugarManagerErrorDomain = @"name.elliottcable.Sugar.Manager.Er
   [super init];
   sugars = [[NSMutableSet setWithCapacity:25] retain];
   
-  [self updateSugars:NULL];
+  [self updateSugarsFromApplicationSupport];
   
   return self;
 }
