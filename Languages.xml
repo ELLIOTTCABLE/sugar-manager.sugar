@@ -4,6 +4,8 @@
   <meta>
     <!-- This should just be the name without .sugar -->
     <name>Sugar Manager</name>
+    <!-- This should be a short and succinct description of the sugar. No formatting interpreted. -->
+    <description>A sugar that gives you a user interface with which you can manage the installation and updating of other sugars.</description>
     <!-- Author's name -->
     <author>elliottcable</author>
     <!--
