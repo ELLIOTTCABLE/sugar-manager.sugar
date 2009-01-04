@@ -24,7 +24,7 @@
       Itemizers, etc...) should all be directly within the root of the archive/
       repository, not within a subfolder.
     -->
-    <download format="raw">file:///Users/elliottcable/Code/sugar-manager.sugar</download>
+    <download format="git">git://github.com/elliottcable/sugar-manager.sugar.git</download>
     <!-- The home URL at which a user can obtain more information -->
     <url>http://github.com/elliottcable/sugar-manager.sugar</url>
     <!--
