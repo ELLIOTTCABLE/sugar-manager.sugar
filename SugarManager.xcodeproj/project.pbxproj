@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		3D0E843D0EC3EA940022EEE4 /* SugarManager.sugar in Copy To Espresso */ = {isa = PBXBuildFile; fileRef = 8D5B49B6048680CD000E48DA /* SugarManager.sugar */; };
+		518DACC70F103D7200BAAF3E /* Languages.xml in Copy Languages.xml */ = {isa = PBXBuildFile; fileRef = 51C019F60F0D3DAC007CA021 /* Languages.xml */; };
 		51C0166A0F0C6E38007CA021 /* SugarManager.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51C016690F0C6E38007CA021 /* SugarManager.xib */; };
-		51C017310F0C7651007CA021 /* Actions.xml in Resources */ = {isa = PBXBuildFile; fileRef = 51C0172F0F0C7651007CA021 /* Actions.xml */; };
-		51C017320F0C7651007CA021 /* Categories.xml in Resources */ = {isa = PBXBuildFile; fileRef = 51C017300F0C7651007CA021 /* Categories.xml */; };
 		51C017470F0C7724007CA021 /* YRSugarManagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C017440F0C7724007CA021 /* YRSugarManagerController.m */; };
 		51C017480F0C7724007CA021 /* YRSugarManagerOpeningAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C017460F0C7724007CA021 /* YRSugarManagerOpeningAction.m */; };
 		51C017690F0C7C23007CA021 /* YRSugarRepresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C017680F0C7C23007CA021 /* YRSugarRepresentation.m */; };
-		51C019F70F0D3DAC007CA021 /* Languages.xml in Resources */ = {isa = PBXBuildFile; fileRef = 51C019F60F0D3DAC007CA021 /* Languages.xml */; };
+		51FCBE230F10390600FAEA4F /* Actions.xml in Copy FileActions */ = {isa = PBXBuildFile; fileRef = 51C0172F0F0C7651007CA021 /* Actions.xml */; };
+		51FCBE240F10390600FAEA4F /* Categories.xml in Copy FileActions */ = {isa = PBXBuildFile; fileRef = 51C017300F0C7651007CA021 /* Categories.xml */; };
 		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
 		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
@@ -31,14 +31,27 @@
 			name = "Copy To Espresso";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3D65765F0E991E6E009E9EB8 /* Copy XML Files */ = {
+		518DACD30F103D7E00BAAF3E /* Copy Languages.xml */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 1;
 			files = (
+				518DACC70F103D7200BAAF3E /* Languages.xml in Copy Languages.xml */,
 			);
-			name = "Copy XML Files";
+			name = "Copy Languages.xml";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51FCBE210F10380600FAEA4F /* Copy FileActions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = FileActions;
+			dstSubfolderSpec = 1;
+			files = (
+				51FCBE230F10390600FAEA4F /* Actions.xml in Copy FileActions */,
+				51FCBE240F10390600FAEA4F /* Categories.xml in Copy FileActions */,
+			);
+			name = "Copy FileActions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -79,6 +92,7 @@
 		089C166AFE841209C02AAC07 /* CSS */ = {
 			isa = PBXGroup;
 			children = (
+				51FCBE220F1038EB00FAEA4F /* XML files */,
 				51C017410F0C7724007CA021 /* Code */,
 				089C167CFE841241C02AAC07 /* Resources */,
 				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
@@ -99,11 +113,9 @@
 		089C167CFE841241C02AAC07 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				51C0172E0F0C7651007CA021 /* FileActions */,
 				8D5B49B7048680CD000E48DA /* Info.plist */,
 				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
 				51C016690F0C6E38007CA021 /* SugarManager.xib */,
-				51C019F60F0D3DAC007CA021 /* Languages.xml */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -157,6 +169,15 @@
 			path = Code;
 			sourceTree = "<group>";
 		};
+		51FCBE220F1038EB00FAEA4F /* XML files */ = {
+			isa = PBXGroup;
+			children = (
+				51C019F60F0D3DAC007CA021 /* Languages.xml */,
+				51C0172E0F0C7651007CA021 /* FileActions */,
+			);
+			name = "XML files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -167,7 +188,8 @@
 				8D5B49AF048680CD000E48DA /* Resources */,
 				8D5B49B1048680CD000E48DA /* Sources */,
 				8D5B49B3048680CD000E48DA /* Frameworks */,
-				3D65765F0E991E6E009E9EB8 /* Copy XML Files */,
+				51FCBE210F10380600FAEA4F /* Copy FileActions */,
+				518DACD30F103D7E00BAAF3E /* Copy Languages.xml */,
 				3D0E84440EC3EAA80022EEE4 /* Copy To Espresso */,
 			);
 			buildRules = (
@@ -204,9 +226,6 @@
 			files = (
 				8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */,
 				51C0166A0F0C6E38007CA021 /* SugarManager.xib in Resources */,
-				51C017310F0C7651007CA021 /* Actions.xml in Resources */,
-				51C017320F0C7651007CA021 /* Categories.xml in Resources */,
-				51C019F70F0D3DAC007CA021 /* Languages.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
