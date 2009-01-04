@@ -75,8 +75,11 @@ const NSString *YRSugarManagerErrorDomain = @"name.elliottcable.Sugar.Manager.Er
 
 - (IBAction)installSugarAction:(id)sender {
   [progressIndicator startAnimation:self];
+  BOOL result = NO;
   YRSugarRepresentation *sugar = [[sugarsController arrangedObjects] objectAtIndex:[sender clickedRow]];
-  [self installSugar:sugar error:NULL];
+  NSError *theError = nil;
+  result = [self installSugar:sugar error:&theError];
+  if(!result) [[NSAlert alertWithError:theError] runModal];
   [progressIndicator stopAnimation:self];
 }
 
