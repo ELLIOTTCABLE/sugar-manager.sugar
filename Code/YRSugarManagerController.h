@@ -15,6 +15,7 @@ enum YRErrors {
   NSMutableSet *sugars;
   IBOutlet NSArrayController *sugarsController;
   IBOutlet NSProgressIndicator *progressIndicator;
+  IBOutlet NSTableView *tableView;
 }
 - (id)sugarByIdentifier:(id)identifier;
 - (IBAction)updateSugars:(id)sender;
