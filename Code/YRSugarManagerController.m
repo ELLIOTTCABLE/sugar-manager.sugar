@@ -62,15 +62,28 @@ const NSString *YRSugarManagerErrorDomain = @"name.elliottcable.Sugar.Manager.Er
 }
 
 - (void)updateSugarsFromCoffeeHouse {
-  NSLog(@"- updateSugarsFromCoffeeHouse:");
+  NSLog(@"- updateSugarsFromCoffeeHouse");
+  NSError **errorProxy = nil;
+  NSLog(@"- updateSugarsFromCoffeeHouse ... allocated errorProxy");
+  NSXMLDocument *databaseXML = [[NSXMLDocument alloc] initWithContentsOfURL:[NSURL URLWithString:@"http://fileability.net/coffee/database.xml"] options:NSXMLDocumentTidyXML error:errorProxy];;
+  NSXMLElement *sugarsElement = [[[databaseXML rootElement] elementsForName:@"sugars"] lastObject];
+  NSLog(@"- updateSugarsFromCoffeeHouse ... received XML data for database: %@", sugarsElement);
+  NSEnumerator *sugarElementsEnumerator = [[sugarsElement elementsForName:@"item"] objectEnumerator];
+  id aSugarElement;
+  while (aSugarElement = [sugarElementsEnumerator nextObject]) {
+    NSString *name = [[[[aSugarElement elementsForName:@"name"] lastObject] stringValue] stringByAddingPercentEscapesUsingEncoding:NSUnicodeStringEncoding];
+    NSLog(@"- updateSugarsFromCoffeeHouse ... enumerating %@", name);
+    YRSugarRepresentation *sugar = [YRSugarRepresentation sugarFromURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://fileability.net/coffee/export.php?format=language&name=%@", name]]];
+    if(sugar && ![self sugarByIdentifier:[sugar identifier]]) [sugars addObject:sugar];
+  }
 }
 
 - (void)updateSugarsFromGitHub {
-  NSLog(@"- updateSugarsFromGitHub:");
+  NSLog(@"- updateSugarsFromGitHub");
 }
 
 - (void)updateSugarsFromGoogleCode {
-  NSLog(@"- updateSugarsFromGoogleCode:");
+  NSLog(@"- updateSugarsFromGoogleCode");
 }
 
 - (IBAction)installSugarAction:(id)sender {
