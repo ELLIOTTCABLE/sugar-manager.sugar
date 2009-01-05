@@ -56,7 +56,7 @@ const NSString *YRSugarManagerErrorDomain = @"name.elliottcable.Sugar.Manager.Er
       } else if(compiledExists) {
         sugar = [YRSugarRepresentation sugarFromURL:[NSURL fileURLWithPath:languagesXMLCompiled]];
       }
-      if(sugar && ![self sugarByIdentifier:[sugar identifier]]) { [sugar setInstalled:YES]; [sugars addObject:sugar]; }
+      if(sugar && ![self sugarByIdentifier:[sugar identifier]]) { [sugar setInstalled:YES]; [[self mutableSetValueForKey:@"sugars"] addObject:sugar]; }
     }
   }
 }
@@ -74,7 +74,7 @@ const NSString *YRSugarManagerErrorDomain = @"name.elliottcable.Sugar.Manager.Er
     NSString *name = [[[[aSugarElement elementsForName:@"name"] lastObject] stringValue] stringByAddingPercentEscapesUsingEncoding:NSUnicodeStringEncoding];
     NSLog(@"- updateSugarsFromCoffeeHouse ... enumerating %@", name);
     YRSugarRepresentation *sugar = [YRSugarRepresentation sugarFromURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://fileability.net/coffee/export.php?format=language&name=%@", name]]];
-    if(sugar && ![self sugarByIdentifier:[sugar identifier]]) [sugars addObject:sugar];
+    if(sugar && ![self sugarByIdentifier:[sugar identifier]]) [[self mutableSetValueForKey:@"sugars"] addObject:sugar];
   }
 }
 
