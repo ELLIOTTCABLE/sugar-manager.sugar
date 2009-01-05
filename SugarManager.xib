@@ -8,7 +8,7 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="10"/>
+			<integer value="1"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -39,7 +39,7 @@
 				<int key="NSWindowStyleMask">31</int>
 				<int key="NSWindowBacking">2</int>
 				<string key="NSWindowRect">{{196, 140}, {657, 370}}</string>
-				<int key="NSWTFlags">-1543503872</int>
+				<int key="NSWTFlags">603979776</int>
 				<string key="NSWindowTitle">Sugar Manager</string>
 				<string key="NSWindowClass">NSPanel</string>
 				<nil key="NSViewClass"/>
@@ -260,7 +260,7 @@
 									<reference key="NSSuperview" ref="515185855"/>
 									<reference key="NSTarget" ref="515185855"/>
 									<string key="NSAction">_doScroller:</string>
-									<double key="NSPercent">1.947368e-01</double>
+									<double key="NSPercent">9.964413e-01</double>
 								</object>
 								<object class="NSScroller" id="658218093">
 									<reference key="NSNextResponder" ref="515185855"/>
@@ -270,7 +270,7 @@
 									<int key="NSsFlags">1</int>
 									<reference key="NSTarget" ref="515185855"/>
 									<string key="NSAction">_doScroller:</string>
-									<double key="NSPercent">9.966778e-01</double>
+									<double key="NSPercent">9.983766e-01</double>
 								</object>
 								<object class="NSClipView" id="35575349">
 									<reference key="NSNextResponder" ref="515185855"/>
@@ -567,11 +567,6 @@
 						<reference key="parent" ref="515185855"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">11</int>
-						<reference key="object" ref="653715754"/>
-						<reference key="parent" ref="515185855"/>
-					</object>
-					<object class="IBObjectRecord">
 						<int key="objectID">12</int>
 						<reference key="object" ref="990483509"/>
 						<object class="NSMutableArray" key="children">
@@ -651,6 +646,11 @@
 						<int key="objectID">52</int>
 						<reference key="object" ref="908851093"/>
 						<reference key="parent" ref="290095518"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">11</int>
+						<reference key="object" ref="653715754"/>
+						<reference key="parent" ref="515185855"/>
 					</object>
 				</object>
 			</object>
