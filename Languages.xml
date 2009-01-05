@@ -73,6 +73,32 @@
           http://github.com/elliottcable/ruby.sugar/tree/master/Languages.xml
     -->
     <dependencies></dependencies>
+    <!--
+      A shell script / shell command to be executed after the sugar is
+      acquired, but before it is installed.
+      
+      This will be executed with the downloaded and uncompressed directory as
+      the working directory. No other environment is guaranteed, so be as
+      explicit as possible.
+      
+      This is primarily intended for Cocoa sugars to compile themselves before
+      installation.
+      
+      This tag may be omitted. If the 'interpreter' attribute is omitted, it
+      will be executed within /bin/sh.
+    -->
+    <script interpreter="/bin/sh">/usr/bin/xcodebuild</script>
+    <!--
+      If it is not sufficient for your sugar to be copied verbatim into the
+      Sugars directory as-is, such as if your sugar is compressed into a sub-
+      directory or your sugar has to be compiled and then copied from a build
+      folder, then you should define a relative path to your *actual* `.sugar`
+      folder here.
+      
+      This tag may be omitted. It will default to copying this entire root
+      directory into the sugars directory.
+    -->
+    <directory>build/Release/Sugar Manager.sugar</directory>
   </meta>
   
 </settings>
