@@ -45,11 +45,11 @@
       This should provide a URL at which the sugar should be accessed.
       
       The 'format' attribute should be one of the following:
-       - raw: Only applicable with a file:// URL, this means it's an unarchived directory
-       - tgz: URL references a gzipped tarfile (NOT IMPLEMENTED)
-       - zip: URL references a zipfile (NOT IMPLEMENTED)
-       - svn: URL references the Sugar directory's path in a SVN repository (NOT IMPLEMENTED)
-       - git: URL references a publicly-accessible git upstream (NOT IMPLEMENTED)
+       - raw: Only used internally. *Do not use*.
+       - tgz: URL references a tarred GZIP
+       - zip: URL references a zipfile
+       - svn: URL references the Sugar directory's path in a SVN repository
+       - git: URL references a publicly-accessible git upstream
       In all cases, the archive/repository should have the Sugar directory as
       it's root - that is, the Languages.xml file and Sugar folders (Syntaxes,
       Itemizers, etc...) should all be directly within the root of the archive/
