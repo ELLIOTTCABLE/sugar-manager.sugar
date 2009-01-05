@@ -56,7 +56,7 @@ const NSString *YRSugarManagerErrorDomain = @"name.elliottcable.Sugar.Manager.Er
       } else if(compiledExists) {
         sugar = [YRSugarRepresentation sugarFromURL:[NSURL fileURLWithPath:languagesXMLCompiled]];
       }
-      if(sugar && ![self sugarByIdentifier:[sugar identifier]]) { [sugar setInstalled:YES]; [[self mutableSetValueForKey:@"sugars"] addObject:sugar]; }
+      if(sugar) { [sugar setInstalled:YES]; [[self mutableSetValueForKey:@"sugars"] addObject:sugar]; }
     }
   }
 }
