@@ -47,7 +47,7 @@
   NSXMLDocument *languagesXML = [[NSXMLDocument alloc] initWithContentsOfURL:languagesXMLURL options:NSXMLDocumentTidyXML error:errorProxy];
   NSXMLElement *meta = [[[languagesXML rootElement] elementsForName:@"meta"] lastObject];
   
-  NSLog(@"+ sugarFromURL: ... received XML data: %@", meta);
+  NSLog(@"+ sugarFromURL: ... received XML data: %@", [meta className]);
   
   NSString *aName = [[[meta elementsForName:@"name"] lastObject] stringValue];
   if(!aName || aName == @"") return nil;
