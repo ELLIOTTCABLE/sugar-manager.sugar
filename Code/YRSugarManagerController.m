@@ -179,7 +179,7 @@ const NSString *YRSugarManagerErrorDomain = @"name.elliottcable.Sugar.Manager.Er
 }
 
 - (void)dealloc {
-  [sugars dealloc];
+  [sugars release];
   sugars = nil;
   [super dealloc];
 }
