@@ -2,15 +2,26 @@
 <settings>
   
   <meta>
-    <!-- This should just be the name without .sugar -->
+    <!--
+      This should just be the name without the `.sugar` file extension.
+      
+      This tag *may not* be omitted.
+    -->
     <name>Sugar Manager</name>
-    <!-- This should be a short and succinct description of the sugar. No formatting interpreted. -->
+    <!--
+      This should be a short and succinct description of the sugar. No
+      formatting is guaranteed to be interpreted.
+      
+      This tag may be omitted.
+    -->
     <description>A sugar that gives you a user interface with which you can manage the installation and updating of other sugars.</description>
-    <!-- Author's name -->
+    <!-- Author's name - This tag *may not* be omitted. -->
     <author>elliottcable</author>
     <!--
       Identifier string (for the whole sugar, not the same as the language string above).
       Should probably look like 'tld.domain.Sugar.Language-name' or 'tld.domain.Sugar.Language-name.framework'
+      
+      This tag *may not* be omitted.
     -->
     <identifier>name.elliottcable.Sugar.Manager</identifier>
     <!--
@@ -22,8 +33,10 @@
           preparation for a preview version or a release
        - preview: Working, but not fully functional. Intended as a 'feature
           preview' for beta testers or interested parties
-       - release: A release version, this is prepared for general use. May be
-          omitted, this is the (assumed) default state of the attribute
+       - release: A release version, this is prepared for general use.
+      
+      This tag may be omitted, a version of "0" and a status of "preview" will
+      be assumed.
     -->
     <version status="development">0</version>
     <!--
@@ -41,7 +54,7 @@
       repository, not within a subfolder.
     -->
     <download format="git">git://github.com/elliottcable/sugar-manager.sugar.git</download>
-    <!-- The home URL at which a user can obtain more information -->
+    <!-- The home URL at which a user can obtain more information. This tag may be omitted. -->
     <url>http://github.com/elliottcable/sugar-manager.sugar</url>
     <!--
       This is an array of dependency elements, each of which references the
@@ -49,8 +62,11 @@
       be automatically installed first if found, and this sugar will
       marked as unavailable if it's dependencies are not found / unavailable.
       
-      This sugar has no dependencies, see the Ruby.sugar's Languages.xml for
-      an example:
+      This tag may be omitted, or left empty. Both will be assumed to mean
+      that this Sugar will work without any dependencies.
+      
+      Since this sugar has no dependencies, see the Ruby.sugar's Languages.xml
+      for an example:
           
           http://github.com/elliottcable/ruby.sugar/tree/master/Languages.xml
     -->
