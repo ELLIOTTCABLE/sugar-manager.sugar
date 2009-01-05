@@ -8,7 +8,7 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="1"/>
+			<integer value="24"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -211,7 +211,7 @@
 														<reference key="NSTextColor" ref="830401445"/>
 													</object>
 													<object class="NSButtonCell" key="NSDataCell" id="241756246">
-														<int key="NSCellFlags">604110336</int>
+														<int key="NSCellFlags">67239424</int>
 														<int key="NSCellFlags2">134348800</int>
 														<string key="NSContents">Install</string>
 														<reference key="NSSupport" ref="26"/>
@@ -302,13 +302,13 @@
 						<object class="NSButton" id="277754153">
 							<reference key="NSNextResponder" ref="290095518"/>
 							<int key="NSvFlags">265</int>
-							<string key="NSFrame">{{532, 326}, {105, 25}}</string>
+							<string key="NSFrame">{{515, 326}, {122, 25}}</string>
 							<reference key="NSSuperview" ref="290095518"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="708013201">
 								<int key="NSCellFlags">-2080244224</int>
 								<int key="NSCellFlags2">134217728</int>
-								<string key="NSContents">Update Sugars</string>
+								<string key="NSContents">Update Sugar list</string>
 								<reference key="NSSupport" ref="366127857"/>
 								<reference key="NSControlView" ref="277754153"/>
 								<int key="NSButtonFlags">-2038152961</int>
@@ -323,7 +323,7 @@
 							<reference key="NSNextResponder" ref="290095518"/>
 							<int key="NSvFlags">1289</int>
 							<object class="NSPSMatrix" key="NSDrawMatrix"/>
-							<string key="NSFrame">{{508, 330}, {16, 16}}</string>
+							<string key="NSFrame">{{491, 330}, {16, 16}}</string>
 							<reference key="NSSuperview" ref="290095518"/>
 							<int key="NSpiFlags">28938</int>
 							<double key="NSMinValue">1.600000e+01</double>
