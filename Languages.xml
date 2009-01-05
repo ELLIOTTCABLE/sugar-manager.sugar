@@ -19,7 +19,9 @@
     <author>elliottcable</author>
     <!--
       Identifier string (for the whole sugar, not the same as the language string above).
-      Should probably look like 'tld.domain.Sugar.Language-name' or 'tld.domain.Sugar.Language-name.framework'
+      Should probably look like 'tld.domain.Sugar.Language-name' or
+      'tld.domain.Sugar.Language-name.framework'. For example,
+      'com.mydom.Sugar.Ruby' or 'com.mydom.Sugar.Ruby.Rails'.
       
       This tag *may not* be omitted.
     -->
