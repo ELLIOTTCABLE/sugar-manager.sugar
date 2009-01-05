@@ -22,14 +22,14 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		3D0E84440EC3EAA80022EEE4 /* Copy To Espresso */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			dstPath = "~/Library/Application Support/Espresso/Sugars";
 			dstSubfolderSpec = 0;
 			files = (
 				3D0E843D0EC3EA940022EEE4 /* SugarManager.sugar in Copy To Espresso */,
 			);
 			name = "Copy To Espresso";
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 		};
 		518DACD30F103D7E00BAAF3E /* Copy Languages.xml */ = {
 			isa = PBXCopyFilesBuildPhase;
