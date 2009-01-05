@@ -84,6 +84,9 @@
       This is primarily intended for Cocoa sugars to compile themselves before
       installation.
       
+      This tag may also appear more than once, though that should be avoided.
+      Order of execution is not guaranteed.
+      
       This tag may be omitted. If the 'interpreter' attribute is omitted, it
       will be executed within /bin/sh.
     -->
