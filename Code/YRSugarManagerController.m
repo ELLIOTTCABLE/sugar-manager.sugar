@@ -67,7 +67,7 @@ const NSString *YRSugarManagerErrorDomain = @"name.elliottcable.Sugar.Manager.Er
   NSLog(@"- updateSugarsFromCoffeeHouse ... allocated errorProxy");
   NSXMLDocument *databaseXML = [[NSXMLDocument alloc] initWithContentsOfURL:[NSURL URLWithString:@"http://fileability.net/coffee/database.xml"] options:NSXMLDocumentTidyXML error:errorProxy];;
   NSXMLElement *sugarsElement = [[[databaseXML rootElement] elementsForName:@"sugars"] lastObject];
-  NSLog(@"- updateSugarsFromCoffeeHouse ... received XML data for database: %@", sugarsElement);
+  NSLog(@"- updateSugarsFromCoffeeHouse ... received XML data for database: %@", [sugarsElement className]);
   NSEnumerator *sugarElementsEnumerator = [[sugarsElement elementsForName:@"item"] objectEnumerator];
   id aSugarElement;
   while (aSugarElement = [sugarElementsEnumerator nextObject]) {
