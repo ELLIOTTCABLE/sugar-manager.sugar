@@ -73,7 +73,7 @@ const NSString *YRSugarManagerErrorDomain = @"name.elliottcable.Sugar.Manager.Er
   while (aSugarElement = [sugarElementsEnumerator nextObject]) {
     NSString *name = [[[[aSugarElement elementsForName:@"name"] lastObject] stringValue] stringByAddingPercentEscapesUsingEncoding:NSUnicodeStringEncoding];
     NSLog(@"- updateSugarsFromCoffeeHouse ... enumerating %@", name);
-    YRSugarRepresentation *sugar = [YRSugarRepresentation sugarFromURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://fileability.net/coffee/export.php?format=language&name=%@", name]]];
+    YRSugarRepresentation *sugar = [YRSugarRepresentation sugarFromURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://fileability.net/coffee/sugar/%@/language", name]]];
     if(sugar && ![self sugarByIdentifier:[sugar identifier]]) [[self mutableSetValueForKey:@"sugars"] addObject:sugar];
   }
 }
