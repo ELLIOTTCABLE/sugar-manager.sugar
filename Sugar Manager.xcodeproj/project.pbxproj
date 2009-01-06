@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		514F6AC80F12DCB0008EB86E /* FileActions in Copy XML Resources */ = {isa = PBXBuildFile; fileRef = 514F6AC30F12DC2B008EB86E /* FileActions */; };
 		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
 		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
@@ -18,6 +19,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 1;
 			files = (
+				514F6AC80F12DCB0008EB86E /* FileActions in Copy XML Resources */,
 			);
 			name = "Copy XML Resources";
 			runOnlyForDeploymentPostprocessing = 0;
