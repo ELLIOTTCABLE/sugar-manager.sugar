@@ -7,10 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		514F6AC40F12DC2B008EB86E /* FileActions in Resources */ = {isa = PBXBuildFile; fileRef = 514F6AC30F12DC2B008EB86E /* FileActions */; };
 		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
 		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		514F6AC70F12DC7A008EB86E /* Copy XML Resources */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 1;
+			files = (
+			);
+			name = "Copy XML Resources";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		089C1672FE841209C02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
@@ -118,6 +130,7 @@
 				8D5B49AF048680CD000E48DA /* Resources */,
 				8D5B49B1048680CD000E48DA /* Sources */,
 				8D5B49B3048680CD000E48DA /* Frameworks */,
+				514F6AC70F12DC7A008EB86E /* Copy XML Resources */,
 			);
 			buildRules = (
 			);
@@ -152,7 +165,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */,
-				514F6AC40F12DC2B008EB86E /* FileActions in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
