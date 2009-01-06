@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Sugar Manager' target in the 'Sugar Manager' project.
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
